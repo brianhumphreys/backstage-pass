@@ -11,12 +11,12 @@ const ProfileBlock = () => {
         <img
           width="150px"
           alt="Anne Hathaway picture"
-          src={employeeProfilePayload.imageUrl}
+          src={employeeProfilePayload.employee.imageUrl}
         />
       </div>
-      <h1 className="user-name">{employeeProfilePayload.name}</h1>
+      <h1 className="user-name">{employeeProfilePayload.employee.name}</h1>
       <div className="profile-description">
-        <p className="scnd-font-color">{employeeProfilePayload.bio}</p>
+        <p className="scnd-font-color">{employeeProfilePayload.employee.bio}</p>
       </div>
       <ul className="profile-options horizontal-list">
         <li>

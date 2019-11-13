@@ -31,7 +31,7 @@ const MenuBlock = () => {
         </li>
         <li>
           <a className="menu-box-tab" href="#13">
-            <sapn className="icon entypo-chart-line scnd-font-color"></sapn>
+            <span className="icon entypo-chart-line scnd-font-color"></span>
             Statistics
           </a>
         </li>

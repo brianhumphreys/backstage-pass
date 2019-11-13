@@ -4,20 +4,20 @@ import "./App.css";
 import EmployeeProfile from "./containers/EmployeeProfile";
 import ManagerProfile from "./containers/ManagerProfile";
 import NavigationBar from "./containers/Navigation";
-// import HomePage from "./containers/HomePage";
 import employeeProfilePayload from "./mockData/employeeProfile";
+import InitiativePage from "./containers/InitiativePage";
 
 const App = () => {
-  const Profile = employeeProfilePayload.manager
+  const Profile = employeeProfilePayload.employee.manager
     ? ManagerProfile
     : EmployeeProfile;
+
   return (
     <Fragment>
       <NavigationBar />
       <Switch>
         <Route exact path="/" component={Profile} />
-        {/*<Route exact path="/#2" component={<div></div>} />*/}
-        {/*<Route exact path="home" compoonent={HomePage} />*/}
+        <Route path="/initiatives" component={InitiativePage} />
       </Switch>
     </Fragment>
   );

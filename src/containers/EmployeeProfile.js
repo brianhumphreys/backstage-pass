@@ -19,11 +19,6 @@ import RadarChartBlock from '../components/RadarChartBlock';
 
 
 const EmployeeProfile = () => {
-
-
-    console.log(employeeProfilePayload);
-
-
     return (
         <body>
         <div className="main-container">
