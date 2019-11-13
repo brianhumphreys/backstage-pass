@@ -7,17 +7,17 @@ const NavigationBar = () => {
       <ul className="header-menu horizontal-list">
         <li>
           <Link to="/">
-            <div className="header-menu-tab">
-              <span className="icon entypo-cog scnd-font-color"></span>
-              Settings
+            <div className="header-menu-tab" href="2">
+              <span className="icon fontawesome-user scnd-font-color"></span>
+              Account
             </div>
           </Link>
         </li>
         <li>
-          <Link to="/account">
-            <div className="header-menu-tab" href="2">
-              <span className="icon fontawesome-user scnd-font-color"></span>
-              Account
+          <Link to="/">
+            <div className="header-menu-tab">
+              <span className="icon entypo-cog scnd-font-color"></span>
+              stuff
             </div>
           </Link>
         </li>
