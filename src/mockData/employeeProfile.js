@@ -4,6 +4,7 @@ const employeeProfilePayload = {
   "email": "humbfrancis@gmail.com",
   "githubUrl": "https://github.com/brianhumphreys",
   "bio": "I am a puppy who really knows SQL. I am looking for different bones to chew on and would like to branch out for different opportunities!",
+  "manager": false,
   "skills": [
     {
       "skill": "team work",
