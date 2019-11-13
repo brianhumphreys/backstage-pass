@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Kotta+One);
+
+.svg {
+    width:450px;
+    height:300px;
+    overflow: visible;
+    position:absolute;
+    left:50%;
+    margin-left:-150px;
+}
