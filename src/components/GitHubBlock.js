@@ -1,24 +1,38 @@
-import React from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
+import GitHubProfile from './GitHubProfile';
+const GitHubBlock = ({defaultGitHubUserName}) => {
+  const [gitHubData, updateGitHubData] = useState();
+  const [gitHubUserName, setGitHubUserName] = useState(defaultGitHubUserName);
 
-const GitHubBlock = () => {
+  const updateGitHubUserName = (event) => {
+    event.preventDefault()
+    setGitHubUserName(event.target.gitHubName.value)
+  }
+
+  useEffect(() => {
+    axios
+     .get(`https://api.github.com/users/${gitHubUserName}`)
+     .then(({ data }) => {
+       console.log('we did it')
+       updateGitHubData(data)
+       console.log(data)
+     }).catch((e) => {
+       updateGitHubData({})
+     });
+  }, [gitHubUserName]);
   return (
       <div className="tweets block">
           <h2 className="titular">
-              <span className="icon zocial-twitter"></span>LATEST TWEETS
+              <span className="icon zocial-GitHubBlock"></span>GitHub
           </h2>
           <div className="tweet first">
-              <p>
-                  Ice-cream trucks only play music when out of ice-cream. Well
-                  played dad. On{" "}
-                  <a className="tweet-link" href="#17">
-                      @Quora
-                  </a>
-              </p>
-              <p>
-                  <a className="time-ago scnd-font-color" href="#18">
-                      3 minutes ago
-                  </a>
-              </p>
+            {gitHubUserName && gitHubData.login ? <GitHubProfile gitHubData={gitHubData} /> :
+              <form onSubmit={updateGitHubUserName}>
+                Add your gihub Profile
+                <input type="text" name="gitHubName"></input>
+                <input type="submit"/>
+              </form>}
           </div>
           <div className="tweet">
               <p>
