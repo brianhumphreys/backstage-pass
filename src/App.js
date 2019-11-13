@@ -5,8 +5,9 @@ import EmployeeProfile from "./containers/EmployeeProfile";
 import ManagerProfile from "./containers/ManagerProfile";
 import NavigationBar from "./containers/Navigation";
 import employeeProfilePayload from "./mockData/employeeProfile";
-import InitiativePage from "./containers/InitiativePage";
 import InitiativeListPage from "./containers/InititiveListPage";
+
+import AdminPage from "./containers/AdminPage";
 
 const App = () => {
   const Profile = employeeProfilePayload.employee.manager
@@ -19,6 +20,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Profile} />
         <Route path="/initiatives" component={InitiativeListPage} />
+        <Route path="/admin" component={AdminPage} />
       </Switch>
     </Fragment>
   );
