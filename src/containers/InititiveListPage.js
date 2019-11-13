@@ -1,41 +1,48 @@
 import React, { useState } from "react";
-// import "./EmployeeProfile.css";
-import InitiativeBlock from "../components/InitiativeBlock";
-import MediaBlock from "../components/MediaBlock";
-import MenuBlock from "../components/MenuBlock";
-import DonutChartBlock from "../components/DonutChartBlock";
-import SocialMediaBlock from "../components/SocialMediaBlock";
-import RadarChartBlock from "../components/RadarChartBlock/RadarChartBlock";
+import { Link } from 'react-router-dom';
 import ProfileBlock from "../components/ProfileBlock";
-import PlannerBlock from "../components/PlannerBlock";
-import GitHubBlock from "../components/GitHubBlock";
-import EmailBlock from "../components/EmailBlock";
-import AccountBlock from "../components/AccountBlock";
-import LoadingBlock from "../components/LoadingBlock";
-import CalendarDayBlock from "../components/CalendarDayBlock";
-import CalendarMonthBlock from "../components/CalendarMonthBlock";
+import employeeProfilePayload from "../mockData/employeeProfile";
 
 const InitiativePage = () => {
-    return (
-        <body>
-        <div className="main-container">
-            <div className="left-container container">
-                <ProfileBlock />
-                <ProfileBlock />
-                <ProfileBlock />
-            </div>
-            <div className="middle-container container">
-                <ProfileBlock />
-                <ProfileBlock />
-                <ProfileBlock />
-            </div>
-            <div className="right-container container">
-                <ProfileBlock />
-                <ProfileBlock />
-            </div>
+  console.log(window.location.href);
+  const initiatives = employeeProfilePayload.initiatives;
+
+  return (
+    <body>
+      <div className="main-container">
+        <div className="left-container container">
+          {initiatives.map((initiative, i) => {
+            if (i % 3 == 0) {
+              return <Link to={`initiatives/${initiative.name}`}>
+                  <ProfileBlock account={initiative}/>;
+              </Link>
+            }
+            return null;
+          })}
         </div>
-        </body>
-    );
+        <div className="middle-container container">
+          {initiatives.map((initiative, i) => {
+            if (i % 3 == 1) {
+              return <Link to={`initiatives/${initiative.name}`}>
+                  <ProfileBlock account={initiative}/>;
+              </Link>
+            }
+            return null;
+          })}
+        </div>
+        <div className="right-container container">
+          {initiatives.map((initiative, i) => {
+            if (i % 3 == 2) {
+              return <Link to={`initiatives/${initiative.name}`}>
+                  <ProfileBlock account={initiative}/>;
+              </Link>
+            }
+            return null;
+          })}
+        </div>
+      </div>
+    </body>
+  );
 };
 
 export default InitiativePage;

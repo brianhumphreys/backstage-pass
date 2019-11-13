@@ -18,7 +18,8 @@ const App = () => {
       <NavigationBar />
       <Switch>
         <Route exact path="/" component={Profile} />
-        <Route path="/initiatives" component={InitiativeListPage} />
+        <Route exact path="/initiatives" component={InitiativeListPage} />
+        <Route path="/initiatives/:initiative" component={InitiativePage} />
       </Switch>
     </Fragment>
   );

@@ -63,6 +63,66 @@ const employeeProfilePayload = {
           level: 7
         }
       ]
+    },
+    {
+      name: "Quantum",
+      description: "This ones pretty cool. look at me! Im Mr. Initiative",
+      skills: [
+        {
+          skill: "team work",
+          level: 8
+        },
+        {
+          skill: "java",
+          level: 5
+        },
+        {
+          skill: "react",
+          level: 4
+        },
+        {
+          skill: "jenkins",
+          level: 9
+        },
+        {
+          skill: "database",
+          level: 5
+        },
+        {
+          skill: "compozed",
+          level: 7
+        }
+      ]
+    },
+    {
+      name: "Quantum",
+      description: "This ones pretty cool. look at me! Im Mr. Initiative",
+      skills: [
+        {
+          skill: "team work",
+          level: 8
+        },
+        {
+          skill: "java",
+          level: 5
+        },
+        {
+          skill: "react",
+          level: 4
+        },
+        {
+          skill: "jenkins",
+          level: 9
+        },
+        {
+          skill: "database",
+          level: 5
+        },
+        {
+          skill: "compozed",
+          level: 7
+        }
+      ]
     }
   ],
   employee: {

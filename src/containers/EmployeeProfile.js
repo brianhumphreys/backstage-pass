@@ -33,7 +33,7 @@ const EmployeeProfile = () => {
                 <SocialMediaBlock/>
             </div>
             <div className="middle-container container">
-                <ProfileBlock/>
+                <ProfileBlock account={employeeProfilePayload.employee}/>
                 <PlannerBlock/>
                 <GitHubBlock/>
                 {/*<MoreSocialBlock/>*/}
