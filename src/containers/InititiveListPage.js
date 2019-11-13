@@ -16,21 +16,26 @@ import CalendarDayBlock from "../components/CalendarDayBlock";
 import CalendarMonthBlock from "../components/CalendarMonthBlock";
 
 const InitiativePage = () => {
-  return (
-    <body>
-      <div className="main-container">
-        <div className="left-container container">
-          <ProfileBlock />
+    return (
+        <body>
+        <div className="main-container">
+            <div className="left-container container">
+                <ProfileBlock />
+                <ProfileBlock />
+                <ProfileBlock />
+            </div>
+            <div className="middle-container container">
+                <ProfileBlock />
+                <ProfileBlock />
+                <ProfileBlock />
+            </div>
+            <div className="right-container container">
+                <ProfileBlock />
+                <ProfileBlock />
+            </div>
         </div>
-        <div className="middle-container container">
-          <RadarChartBlock id="skills"/>
-        </div>
-        <div className="right-container container">
-          <RadarChartBlock id="otherskills"/>
-        </div>
-      </div>
-    </body>
-  );
+        </body>
+    );
 };
 
 export default InitiativePage;
