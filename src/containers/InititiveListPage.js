@@ -1,6 +1,15 @@
 import React, { useState } from "react";
+// import "./EmployeeProfile.css";
+import InitiativeBlock from "../components/InitiativeBlock";
+import MediaBlock from "../components/MediaBlock";
+import MenuBlock from "../components/MenuBlock";
+import DonutChartBlock from "../components/DonutChartBlock";
+import RadarChartBlock from "../components/RadarChartBlock/RadarChartBlock";
 import { Link } from 'react-router-dom';
 import ProfileBlock from "../components/ProfileBlock";
+import GitHubBlock from "../components/GitHubBlock";
+import EmailBlock from "../components/EmailBlock";
+import LoadingBlock from "../components/LoadingBlock";
 import employeeProfilePayload from "../mockData/employeeProfile";
 
 const InitiativePage = () => {

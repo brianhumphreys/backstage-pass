@@ -14,9 +14,7 @@ const GitHubBlock = ({defaultGitHubUserName}) => {
     axios
      .get(`https://api.github.com/users/${gitHubUserName}`)
      .then(({ data }) => {
-       console.log('we did it')
        updateGitHubData(data)
-       console.log(data)
      }).catch((e) => {
        updateGitHubData({})
      });
@@ -28,25 +26,19 @@ const GitHubBlock = ({defaultGitHubUserName}) => {
           </h2>
           <div className="tweet first">
             {gitHubUserName && gitHubData.login ? <GitHubProfile gitHubData={gitHubData} /> :
-              <form onSubmit={updateGitHubUserName}>
-                Add your gihub Profile
-                <input type="text" name="gitHubName"></input>
-                <input type="submit"/>
-              </form>}
-          </div>
-          <div className="tweet">
-              <p>
-                  We are in the process of pushing out all of the new CC apps!
-                  We will tweet again once they are live{" "}
-                  <a className="tweet-link" href="#19">
-                      #CreativeCloud
-                  </a>
-              </p>
-              <p>
-                  <a className="scnd-font-color" href="#20">
-                      6 hours ago
-                  </a>
-              </p>
+              <div className="input-container">
+                <form onSubmit={updateGitHubUserName}>
+                  <input
+                    type="text"
+                    name="gitHubName"
+                    placeholder="Add your gihub Profile"
+                  />
+                  <div className="input-icon envelope-icon-acount">
+                    <span className="fontawesome-envelope scnd-font-color"></span>
+                  </div>
+                  <input type="submit" className="subscribe button" />
+                </form>
+              </div>}
           </div>
       </div>
   );

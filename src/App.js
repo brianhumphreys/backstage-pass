@@ -8,6 +8,8 @@ import employeeProfilePayload from "./mockData/employeeProfile";
 import InitiativePage from "./containers/InitiativePage";
 import InitiativeListPage from "./containers/InititiveListPage";
 
+import AdminPage from "./containers/AdminPage";
+
 const App = () => {
   const Profile = employeeProfilePayload.employee.manager
     ? ManagerProfile
@@ -18,6 +20,8 @@ const App = () => {
       <NavigationBar />
       <Switch>
         <Route exact path="/" component={Profile} />
+        <Route path="/initiatives" component={InitiativeListPage} />
+        <Route path="/admin" component={AdminPage} />
         <Route exact path="/initiatives" component={InitiativeListPage} />
         <Route path="/initiatives/:initiative" component={InitiativePage} />
       </Switch>
