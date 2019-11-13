@@ -4,16 +4,11 @@ import InitiativeBlock from "../components/InitiativeBlock";
 import MediaBlock from "../components/MediaBlock";
 import MenuBlock from "../components/MenuBlock";
 import DonutChartBlock from "../components/DonutChartBlock";
-import SocialMediaBlock from "../components/SocialMediaBlock";
 import RadarChartBlock from "../components/RadarChartBlock/RadarChartBlock";
 import ProfileBlock from "../components/ProfileBlock";
-import PlannerBlock from "../components/PlannerBlock";
 import GitHubBlock from "../components/GitHubBlock";
 import EmailBlock from "../components/EmailBlock";
-import AccountBlock from "../components/AccountBlock";
 import LoadingBlock from "../components/LoadingBlock";
-import CalendarDayBlock from "../components/CalendarDayBlock";
-import CalendarMonthBlock from "../components/CalendarMonthBlock";
 
 const InitiativePage = () => {
     return (
