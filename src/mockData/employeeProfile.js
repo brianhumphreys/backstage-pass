@@ -1,7 +1,70 @@
 const employeeProfilePayload = {
   signedIn: true,
   github: {},
-
+  skills: ['team work', 'java', 'react', 'jenkins', 'database', 'compozed'],
+  initiatives: [
+    {
+      name: "Quantum",
+      description: "This initiative is the most initiativiest initiative out there. so get initiating.",
+      imageUrl: "",
+      skills: [
+        {
+          skill: "team work",
+          level: 8
+        },
+        {
+          skill: "java",
+          level: 5
+        },
+        {
+          skill: "react",
+          level: 4
+        },
+        {
+          skill: "jenkins",
+          level: 9
+        },
+        {
+          skill: "database",
+          level: 5
+        },
+        {
+          skill: "compozed",
+          level: 7
+        }
+      ]
+    },
+    {
+      name: "Quantum",
+      description: "This ones pretty cool. look at me! Im Mr. Initiative",
+      skills: [
+        {
+          skill: "team work",
+          level: 8
+        },
+        {
+          skill: "java",
+          level: 5
+        },
+        {
+          skill: "react",
+          level: 4
+        },
+        {
+          skill: "jenkins",
+          level: 9
+        },
+        {
+          skill: "database",
+          level: 5
+        },
+        {
+          skill: "compozed",
+          level: 7
+        }
+      ]
+    }
+  ],
   employee: {
     name: "Brian Humphreys",
     imageUrl:
@@ -35,10 +98,6 @@ const employeeProfilePayload = {
       {
         skill: "compozed",
         level: 6
-      },
-      {
-        skill: "agile",
-        level: 9
       }
     ]
   }

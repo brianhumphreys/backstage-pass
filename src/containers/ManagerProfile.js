@@ -14,7 +14,7 @@ import AccountBlock from '../components/AccountBlock';
 import LoadingBlock from '../components/LoadingBlock';
 import CalendarDayBlock from '../components/CalendarDayBlock';
 import CalendarMonthBlock from '../components/CalendarMonthBlock';
-import RadarChartBlock from '../components/RadarChartBlock';
+import RadarChartBlock from '../components/RadarChartBlock/RadarChartBlock';
 
 
 const ManagerProfile = () => {
