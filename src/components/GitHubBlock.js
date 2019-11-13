@@ -1,26 +1,18 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import GitHubProfile from './GitHubProfile';
-
-// fetchGitHubData = (userName) => {
-//   axios
-//    .get("https://api.github.com/users/jab115")
-//    .then(({ data }) => {
-//      console.log('we did it')
-//      // updateGitHubData(data)
-//      return data
-//    }).catch((e) => {
-//      return {};
-//      // updateGitHubData({})
-//    });
-// }
-const GitHubBlock = ({gitHubUserName}) => {
+const GitHubBlock = ({defaultGitHubUserName}) => {
   const [gitHubData, updateGitHubData] = useState();
-  // const [ newTodoLabel, setNewTodoLabel] = useState("");
+  const [gitHubUserName, setGitHubUserName] = useState(defaultGitHubUserName);
+
+  const updateGitHubUserName = (event) => {
+    event.preventDefault()
+    setGitHubUserName(event.target.gitHubName.value)
+  }
 
   useEffect(() => {
     axios
-     .get(`https://api.github.com/users/jab115`)
+     .get(`https://api.github.com/users/${gitHubUserName}`)
      .then(({ data }) => {
        console.log('we did it')
        updateGitHubData(data)
@@ -28,17 +20,19 @@ const GitHubBlock = ({gitHubUserName}) => {
      }).catch((e) => {
        updateGitHubData({})
      });
-    // let data = fetchGitHubData(gitHubUserName)
-    // console.log(data, '(((((((((((())))))))))))')
-    // updateGitHubData(data)
-  }, []);
+  }, [gitHubUserName]);
   return (
       <div className="tweets block">
           <h2 className="titular">
               <span className="icon zocial-GitHubBlock"></span>GitHub
           </h2>
           <div className="tweet first">
-            {gitHubData && gitHubData.login ? <GitHubProfile gitHubData={gitHubData} /> : <form onSubmit={console.log('yo')}>Add your gihub Profile</form>}
+            {gitHubUserName && gitHubData.login ? <GitHubProfile gitHubData={gitHubData} /> :
+              <form onSubmit={updateGitHubUserName}>
+                Add your gihub Profile
+                <input type="text" name="gitHubName"></input>
+                <input type="submit"/>
+              </form>}
           </div>
           <div className="tweet">
               <p>
