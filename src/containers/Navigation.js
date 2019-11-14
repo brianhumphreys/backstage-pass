@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { signedInEmployee } from "../mockData/employees";
+import {getSignedInUser} from "../store/storeFunctions";
 
 const NavigationBar = ({ gravatar }) => {
+
+  const { isManager } = getSignedInUser();
+
   return (
     <header className="block">
       <ul className="header-menu horizontal-list">
@@ -39,6 +43,14 @@ const NavigationBar = ({ gravatar }) => {
             </div>
           </Link>
         </li>
+        { isManager ? <li>
+          <Link to="/admin">
+            <div className="header-menu-tab">
+              <span className="icon fontawesome-user scnd-font-color"></span>
+              Admin
+            </div>
+          </Link>
+        </li> : null}
       </ul>
       <div className="profile-menu">
         <p>
