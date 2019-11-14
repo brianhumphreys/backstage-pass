@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import MediaBlock from '../components/MediaBlock';
 import MenuBlock from '../components/MenuBlock';
 import DonutChartBlock from '../components/DonutChartBlock';
@@ -18,15 +18,23 @@ const EmployeeProfile = () => {
         return employee.name.split(' ').join('') === location[location.length-1];
     });
     const employee = employees[index];
+    const [userScore, setUserScore] = useState(0);
+
+    useEffect(() => {
+        setUserScore(getScore(employee));
+    }, [employee])
 
     const getScore = (employee) =>{
-        if(employee === null) return;
+        if(!employee) {
+            return 0;
+        }
         const github = employee && employee.github && 10;
         const bootcamp = employee && employee.education && employee.education.bootCamp && employee.education.bootCamp.length > 0 && 10;
         const university = employee && employee.education && employee.education.universities && employee.education.universities.length > 0 && 10;
         console.log(github);
         console.log(bootcamp);
         console.log(university);
+        console.log(employee);
         return employee.skills.map(skill => skill.level).reduce((a, b) => a + b, 0) + github + bootcamp + university;
     };
 
@@ -41,7 +49,7 @@ const EmployeeProfile = () => {
         <div className="main-container">
             <div className="left-container container">
                 <MenuBlock />
-                <DonutChartBlock/>
+                <DonutChartBlock score={userScore}/>
                 <LoadingBlock/>
             </div>
             <div className="middle-container container">
