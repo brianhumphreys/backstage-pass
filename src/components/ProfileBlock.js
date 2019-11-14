@@ -1,19 +1,17 @@
 import React from "react";
-import employeeProfilePayload from "../mockData/employeeProfile";
-import { signedInEmployee } from "../mockData/employees";
 
-const ProfileBlock = ({ userData }) => {
+const ProfileBlock = ({ account }) => {
   return (
     <div className="profile block">
       <a className="add-button">
         <span className="icon entypo-plus scnd-font-color"></span>
       </a>
       <div className="profile-picture big-profile-picture clear">
-        <img width="150px" alt="Anne Hathaway picture" src={userData.picture} />
+        <img width="150px" alt="Anne Hathaway picture" src={account.picture} />
       </div>
-      <h1 className="user-name">{userData.name}</h1>
+      <h1 className="user-name">{account.name}</h1>
       <div className="profile-description">
-        <p className="scnd-font-color">{userData.bio}</p>
+        <p className="scnd-font-color">{account.about}</p>
       </div>
       <ul className="profile-options horizontal-list">
         <li>

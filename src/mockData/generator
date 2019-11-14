@@ -1,0 +1,63 @@
+//employees
+[
+  '{{repeat(20, 30)}}',
+  {
+    id: '{{objectId()}}',
+    index: '{{index()}}',
+    guid: '{{guid()}}',
+    isManager: '{{bool()}}',
+    githubUrl: 'http://github.com',
+    picture: 'http://placehold.it/32x32',
+    name: '{{firstName()}} {{surname()}}',
+    path: '{{firstName()}}{{surname()}}',
+    gender: '{{gender()}}',
+    email: '{{email()}}',
+    phone: '+1 {{phone()}}',
+    address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(100, 10000)}}',
+    about: '{{lorem(1, "paragraphs")}}',
+    skills: [
+      {
+        skill: "database",
+        level: '{{integer(0, 10)}}'
+      },
+      {
+        skill: "devtool",
+        level: '{{integer(0, 10)}}'
+      },
+      {
+        skill: "frontend",
+        level: '{{integer(0, 10)}}'
+      },
+      {
+        skill: "objectoriented",
+        level: '{{integer(0, 10)}}'
+      },
+      {
+        skill: "algorithmic",
+        level: '{{integer(0, 10)}}'
+      },
+      {
+        skill: "pair",
+        level: '{{integer(0, 10)}}'
+      }
+      ],
+    badges: [
+      {
+        initiative: 'drove',
+        badges: ['{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}']
+      },
+      {
+        initiative: 'quantum',
+        badges: ['{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}']
+      },
+      {
+        initiative: 'uber',
+        badges: ['{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}']
+      },
+  {
+        initiative: 'virtualintake',
+        badges: ['{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}', '{{bool()}}']
+      }
+    ]
+  }
+]

@@ -1,14 +1,15 @@
 import React from 'react';
-import employeeProfilePayload from "../mockData/employeeProfile";
+import { getSignedInUser } from "../store/storeFunctions";
 
 const EmailBlock = () => {
+
     const openEmail = () => {
-        window.open(`mailto:${employeeProfilePayload.employee.email}`);
+        window.open(`mailto:${getSignedInUser().email}`);
     };
 
     return  (
         <div className="join-newsletter block">
-            <h2 className="titular">Email This Employee at {employeeProfilePayload.employee.email}</h2>
+            <h2 className="titular">Email This Employee at {getSignedInUser().email}</h2>
             <div className="input-container">
                 <div className="input-icon envelope-icon-newsletter">
                     <span className="fontawesome-envelope scnd-font-color"></span>

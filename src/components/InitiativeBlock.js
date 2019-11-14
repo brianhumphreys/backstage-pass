@@ -1,10 +1,6 @@
 import React from "react";
-import employeeProfilePayload from '../mockData/employeeProfile';
 
 const InitiativeBlock = ({ account }) => {
-    // console.log('yunk');
-    // console.log(account);
-    // console.log(window.location.href);
   return (
     <div className="profile block">
       <a className="add-button">

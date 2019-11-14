@@ -37,12 +37,24 @@ const skillList = [
   },
   {
     "skillId": 7,
+    "category": "Skills",
+    "question": "Please rate your ability to code with a pair.",
+    "points": 25
+  },
+  {
+    "skillId": 8,
+    "category": "Skills",
+    "question": "Please rate your algorithmic and problem solving skills",
+    "points": 5
+  },
+  {
+    "skillId": 9,
     "category": "Github",
     "question": "Github account exists",
     "points": 10
   },
   {
-    "skillId": 8,
+    "skillId": 10,
     "category": "Github",
     "question": "Number of git repos",
     "points": 20

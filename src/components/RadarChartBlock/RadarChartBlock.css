@@ -32,6 +32,15 @@
     color: #aaa;
 }
 
+.legend-blue {
+    color: rgba(151, 135, 255, 0.8);
+    margin: 0 0.4rem 0.4rem 1.5rem;
+}
+.legend-red {
+    color: rgba(255, 135, 135, 0.8);
+    margin: 0 0.4rem 0.4rem 1.5rem;
+}
+
 .tooltip-placeholder {
     background-color: #fff;
     border-radius: 4px;

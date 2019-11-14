@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import LineChartBlock from "../components/LineChartBlock";
-import employeeProfilePayload from '../mockData/employeeProfile';
 import MediaBlock from '../components/MediaBlock';
 import MenuBlock from '../components/MenuBlock';
 import DonutChartBlock from '../components/DonutChartBlock';
-import ProfileBlock from '../components/ProfileBlock';
 import GitHubBlock from '../components/GitHubBlock';
 import EmailBlock from '../components/EmailBlock';
 import LoadingBlock from '../components/LoadingBlock';

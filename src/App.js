@@ -1,58 +1,34 @@
-import React, { Fragment } from "react";
-import { Switch, Route } from "react-router-dom";
+import React, {Fragment} from "react";
+import {Route, Switch} from "react-router-dom";
 import "./App.css";
-import EmployeeProfile from "./containers/EmployeeProfile";
+import {getSignedInUser} from './store/storeFunctions';
 import ManagerProfile from "./containers/ManagerProfile";
-import NavigationBar from "./containers/Navigation";
-import employees from "./mockData/employees";
-import userList from "./mockData/userList";
-import initiatives from "./mockData/initiatives";
-import InitiativePage from "./containers/InitiativePage";
-import InitiativeListPage from "./containers/InititiveListPage";
+import EmployeeProfile from "./containers/EmployeeProfile";
 
 import AdminPage from "./containers/AdminPage";
-const getUser = userId => {
-  const user = employees[employees.findIndex(user => user.index === userId)];
-  console.log(user);
-  localStorage.setItem("loggedInUser", JSON.stringify(user));
-  return user;
-};
+import NavigationBar from "./containers/Navigation";
+import InitiativePage from "./containers/InitiativePage";
+import SkillsWorkoutPage from "./containers/SkillsWorkoutPage";
+import InitiativeListPage from "./containers/InititiveListPage";
+import EmployeeSearchPage from "./containers/EmployeeSearchPage";
 
 const App = () => {
-  const user = getUser(0);
-  localStorage.setItem("employees", JSON.stringify(employees));
-
-
-  let loggedInUserString = localStorage.getItem("loggedInUser");
-  let userData;
-
-  const userId = parseInt(
-    window.location.pathname.split("/")[
-      window.location.pathname.split("/").length - 1
-    ],
-    10
-  );
-  const noUserId = Object.is(NaN, userId);
-
-  if (noUserId) {
-    userData = loggedInUserString ? JSON.parse(loggedInUserString) : getUser(0);
-  } else {
-    userData = getUser(userId);
-  }
-
-  const Profile = user.isManager
-    ? () => ManagerProfile({ userData: userData })
-    : () => EmployeeProfile({ userData: userData });
+  const userData = getSignedInUser();
+  const Profile = userData.isManager
+    ? () => ManagerProfile()
+    : () => EmployeeProfile();
   return (
     <Fragment>
-      <NavigationBar gravatar={userData.gravatar} />
+      <NavigationBar gravatar={userData.picture} />
       <Switch>
-        <Route path="/:id?" component={Profile} />
-        <Route path="/admin" component={AdminPage} />
+        <Route exact path="/accounts/:id" component={Profile} />
+        <Route exact path="/accounts" component={EmployeeSearchPage}/>
+        <Route exact path="/admin" component={AdminPage} />
+        <Route exact path="/skillflex" component={SkillsWorkoutPage}/>
         <Route
           exact
           path="/initiatives"
-          component={() => InitiativeListPage(initiatives)}
+          component={InitiativeListPage}
         />
         <Route
           exact

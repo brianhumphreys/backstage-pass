@@ -1,8 +1,7 @@
 import React from "react";
-import employeeProfilePayload from "../mockData/employeeProfile"
+import { getEmployees} from "../store/storeFunctions";
 
 const AdminPage = () => {
-    const employees = [employeeProfilePayload, employeeProfilePayload]
 
     return (
       <div className="account block">
@@ -19,7 +18,7 @@ const AdminPage = () => {
               </tr>
               </thead>
               <tbody>
-              {employees.map(e => {
+              {getEmployees().map(e => {
                   return <tr>
                       <td>
                           {e.employee.name}

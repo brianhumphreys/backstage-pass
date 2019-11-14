@@ -7,36 +7,28 @@ import GitHubBlock from '../components/GitHubBlock';
 import EmailBlock from '../components/EmailBlock';
 import LoadingBlock from '../components/LoadingBlock';
 import RadarChartBlock from '../components/RadarChartBlock/RadarChartBlock';
-import { getEmployees} from "../store/storeFunctions";
 
-const EmployeeProfile = () => {
-    const location = window.location.href.split('/');
-    const employees = getEmployees()
-    const index = employees.findIndex(employee => {
-        return employee.name.split(' ').join('') === location[location.length-1];
-    });
-    const employee = employees[index];
-
+const SkillsWorkoutPage = ({userData}) => {
     return (
         <body>
         <div className="main-container">
             <div className="left-container container">
-                <MenuBlock />
-                <DonutChartBlock/>
-                <LoadingBlock/>
+                <MediaBlock/>
+                <MediaBlock/>
+                <MediaBlock/>
             </div>
             <div className="middle-container container">
-                <ProfileBlock account={employee}/>
-                <GitHubBlock/>
+                <MediaBlock/>
+                <MediaBlock/>
                 <MediaBlock/>
             </div>
             <div className="right-container container">
-                <RadarChartBlock id="employeeSkills" account={employee} comparing={false}/>
-                <EmailBlock/>
+                <MediaBlock/>
+                <MediaBlock/>
             </div>
         </div>
         </body>
     );
 };
 
-export default EmployeeProfile;
+export default SkillsWorkoutPage;

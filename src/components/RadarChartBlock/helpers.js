@@ -1,6 +1,5 @@
 import React from "react";
 import Chart from "chart.js";
-import employeeProfilePayload from "../../mockData/employeeProfile";
 
 const renderChart = (id, account, initiative, comparing) => {
   let canvas = document.getElementById(id);
@@ -91,24 +90,19 @@ const renderChart = (id, account, initiative, comparing) => {
     }
   });
 
-  console.log('stufffffff');
 
-  console.log(account);
-  console.log(initiative);
-
-  const employeeSkills = account ? account.skills.map(skill => skill.level * 10) : [];
-  const initiativeDesiredSkills = initiative ? initiative.skills.map(skill => skill.level * 10) : [];
-
-
+  const employeeSkillLevels = account ? account.skills.map(skill => skill.level * 10) : [];
+  const initiativeDesiredSkillLevels = initiative ? initiative.skills.map(skill => skill.level * 10) : [];
+  const employeeSkills = account ? account.skills.map(skill => skill.skill) : [];
 
   window.chart = new Chart(document.getElementById(id), {
     type: "radar",
     data: {
-      labels: employeeProfilePayload.skills,
+      labels: employeeSkills,
       datasets: [
         {
           label: "Donté Panlin",
-          data: employeeSkills,
+          data: employeeSkillLevels,
           fill: true,
           backgroundColor: gradientRed,
           borderColor: "transparent",
@@ -120,7 +114,7 @@ const renderChart = (id, account, initiative, comparing) => {
         },
         {
           label: "Mireska Sunbreeze",
-          data: comparing ? initiativeDesiredSkills : [],
+          data: comparing ? initiativeDesiredSkillLevels : [],
           fill: true,
           backgroundColor: gradientBlue,
           borderColor: "transparent",

@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { signedInEmployee } from '../mockData/employees';
+import { signedInEmployee } from "../mockData/employees";
 
-const NavigationBar = ({gravatar}) => {
+const NavigationBar = ({ gravatar }) => {
   return (
     <header className="block">
       <ul className="header-menu horizontal-list">
         <li>
-          <Link to={`account/${signedInEmployee.name.replace(/\s/g, '')}`}>
+          <Link to={`accounts/${signedInEmployee.name.split(' ').join('')}`}>
             <div className="header-menu-tab">
               <span className="icon fontawesome-user scnd-font-color"></span>
               Account
@@ -15,10 +15,10 @@ const NavigationBar = ({gravatar}) => {
           </Link>
         </li>
         <li>
-          <Link to="/">
+          <Link to={`/accounts`}>
             <div className="header-menu-tab">
-              <span className="icon entypo-cog scnd-font-color"></span>
-              stuff
+              <span className="icon fontawesome-user scnd-font-color"></span>
+              Employees
             </div>
           </Link>
         </li>
@@ -48,11 +48,7 @@ const NavigationBar = ({gravatar}) => {
           </a>
         </p>
         <div className="profile-picture small-profile-picture">
-          <img
-            width="40px"
-            alt="Anne Hathaway picture"
-            src={gravatar}
-          />
+          <img width="40px" alt="Anne Hathaway picture" src={gravatar} />
         </div>
       </div>
     </header>

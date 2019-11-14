@@ -179,7 +179,7 @@ const employees = [
         "guid": "b81ba50d-3554-4e73-85c5-55d400ca3896",
         "isManager": true,
         "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
+        "picture": "https://api.adorable.io/avatars/285/abott@adorable.png",
         "name": "Kelsey Strong",
         "gender": "female",
         "email": "johnnierhodes@avit.com",
