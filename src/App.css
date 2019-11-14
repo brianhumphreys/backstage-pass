@@ -1119,6 +1119,9 @@ END LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL
   color: white;
 }
 
+
+table thead th { color: white; font-size:20pt; font-weight: bold }
+table tbody  tr td {color: white; font-size:10pt; align: center}
 .table{
   border-collapse:separate;
   border-spacing: 30px 30px;
