@@ -1,84 +1,54 @@
-import React from 'react';
+import React from "react";
+import employeeProfilePayload from '../mockData/employeeProfile';
 
-const InitiativeBlock = () => {
-    return (
-        <div className="line-chart-block block clear">
-            <div className="line-chart">
-                <div className="grafico">
-                    <ul className="eje-y">
-                        <li data-ejeY="30"></li>
-                        <li data-ejeY="20"></li>
-                        <li data-ejeY="10"></li>
-                        <li data-ejeY="0"></li>
-                    </ul>
-                    <ul className="eje-x">
-                        <li>Apr</li>
-                        <li>May</li>
-                        <li>Jun</li>
-                    </ul>
-                    <span data-valor="25">
-                    <span data-valor="8">
-                      <span data-valor="13">
-                        <span data-valor="5">
-                          <span data-valor="23">
-                            <span data-valor="12">
-                              <span data-valor="15"></span>
-                            </span>
-                          </span>
-                        </span>
-                      </span>
-                    </span>
-                  </span>
-                </div>
-            </div>
-            <ul className="time-lenght horizontal-list">
-                <li>
-                    <a className="time-lenght-btn" href="#14">
-                        Week
-                    </a>
-                </li>
-                <li>
-                    <a className="time-lenght-btn" href="#15">
-                        Month
-                    </a>
-                </li>
-                <li>
-                    <a className="time-lenght-btn" href="#16">
-                        Year
-                    </a>
-                </li>
-            </ul>
-            <ul className="month-data clear">
-                <li>
-                    <p>
-                        APR<span className="scnd-font-color"> 2013</span>
-                    </p>
-                    <p>
-                        <span className="entypo-plus increment"> </span>21
-                        <sup>%</sup>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        MAY<span className="scnd-font-color"> 2013</span>
-                    </p>
-                    <p>
-                        <span className="entypo-plus increment"> </span>48
-                        <sup>%</sup>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        JUN<span className="scnd-font-color"> 2013</span>
-                    </p>
-                    <p>
-                        <span className="entypo-plus increment"> </span>35
-                        <sup>%</sup>
-                    </p>
-                </li>
-            </ul>
-        </div>
-    )
+const InitiativeBlock = ({ account }) => {
+    // console.log('yunk');
+    // console.log(account);
+    // console.log(window.location.href);
+  return (
+    <div className="profile block">
+      <a className="add-button">
+        <span className="icon entypo-plus scnd-font-color"></span>
+      </a>
+      <div className="profile-picture big-profile-picture clear">
+        <img
+          width="150px"
+          alt="Anne Hathaway picture"
+          src={account.imageUrl}
+        />
+      </div>
+      <h1 className="user-name">{account.name}</h1>
+      <div className="profile-description">
+        <p className="scnd-font-color">{account.bio}</p>
+      </div>
+      <ul className="profile-options horizontal-list">
+        <li>
+          <a className="comments">
+            <p>
+              <span className="icon fontawesome-comment-alt scnd-font-color"></span>
+              23
+            </p>
+          </a>
+        </li>
+        <li>
+          <a className="views">
+            <p>
+              <span className="icon fontawesome-eye-open scnd-font-color"></span>
+              841
+            </p>
+          </a>
+        </li>
+        <li>
+          <a className="likes">
+            <p>
+              <span className="icon fontawesome-heart-empty scnd-font-color"></span>
+              49
+            </p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  );
 };
 
 export default InitiativeBlock;

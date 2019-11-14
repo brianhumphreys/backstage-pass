@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { signedInEmployee } from '../mockData/employees';
 
 const NavigationBar = () => {
   return (
     <header className="block">
       <ul className="header-menu horizontal-list">
         <li>
-          <Link to="/">
+          <Link to={`account/${signedInEmployee.name.replace(/\s/g, '')}`}>
             <div className="header-menu-tab">
               <span className="icon fontawesome-user scnd-font-color"></span>
               Account

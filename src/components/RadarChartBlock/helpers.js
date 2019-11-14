@@ -2,7 +2,7 @@ import React from "react";
 import Chart from "chart.js";
 import employeeProfilePayload from "../../mockData/employeeProfile";
 
-const renderChart = (id) => {
+const renderChart = (id, account, initiative, comparing) => {
   let canvas = document.getElementById(id);
 
   let gradientBlue = canvas.getContext("2d").createLinearGradient(0, 0, 0, 150);
@@ -91,6 +91,16 @@ const renderChart = (id) => {
     }
   });
 
+  console.log('stufffffff');
+
+  console.log(account);
+  console.log(initiative);
+
+  const employeeSkills = account ? account.skills.map(skill => skill.level * 10) : [];
+  const initiativeDesiredSkills = initiative ? initiative.skills.map(skill => skill.level * 10) : [];
+
+
+
   window.chart = new Chart(document.getElementById(id), {
     type: "radar",
     data: {
@@ -98,7 +108,7 @@ const renderChart = (id) => {
       datasets: [
         {
           label: "Donté Panlin",
-          data: [25, 59, 90, 81, 60, 82],
+          data: employeeSkills,
           fill: true,
           backgroundColor: gradientRed,
           borderColor: "transparent",
@@ -110,7 +120,7 @@ const renderChart = (id) => {
         },
         {
           label: "Mireska Sunbreeze",
-          data: [40, 100, 40, 90, 40, 90],
+          data: comparing ? initiativeDesiredSkills : [],
           fill: true,
           backgroundColor: gradientBlue,
           borderColor: "transparent",

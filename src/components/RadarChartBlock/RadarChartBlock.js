@@ -3,9 +3,9 @@ import "./RadarChartBlock.css";
 import renderChart from "./helpers";
 import BottomTiles from "../subcomponents/BottomTiles";
 
-const RadarChartBlock = (id) => {
+const RadarChartBlock = ({ id, account, comparing, initiative }) => {
   useEffect(() => {
-    renderChart(id);
+    renderChart(id, account, initiative, comparing);
   }, []);
   return (
       <div className="donut-chart-block block">

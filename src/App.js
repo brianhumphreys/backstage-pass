@@ -7,8 +7,13 @@ import NavigationBar from "./containers/Navigation";
 import employeeProfilePayload from "./mockData/employeeProfile";
 import InitiativePage from "./containers/InitiativePage";
 import InitiativeListPage from "./containers/InititiveListPage";
+import LoginPage from './containers/LoginPage/LoginPage';
 
 import AdminPage from "./containers/AdminPage";
+
+const Fake = () => {
+    return (<div></div>)
+};
 
 const App = () => {
   const Profile = employeeProfilePayload.employee.manager
@@ -19,8 +24,9 @@ const App = () => {
     <Fragment>
       <NavigationBar />
       <Switch>
-        <Route exact path="/" component={Profile} />
-        <Route path="/admin" component={AdminPage} />
+          <Route exact path="/" component={Fake}/>
+        <Route exact path="/account/:name" component={Profile} />
+        <Route exact path="/admin" component={AdminPage} />
         <Route exact path="/initiatives" component={InitiativeListPage} />
         <Route exact path="/initiatives/:initiative" component={InitiativePage} />
       </Switch>

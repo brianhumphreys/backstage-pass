@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import InitiativeBlock from "../components/InitiativeBlock";
+import LineChartBlock from "../components/LineChartBlock";
 import employeeProfilePayload from '../mockData/employeeProfile';
 import MediaBlock from '../components/MediaBlock';
 import MenuBlock from '../components/MenuBlock';
@@ -24,7 +24,7 @@ const ManagerProfile = () => {
                 <MenuBlock/>
                 <DonutChartBlock/>
                 <RadarChartBlock/>
-                <InitiativeBlock/>
+                <LineChartBlock/>
                 <MediaBlock/>
             </div>
             <div className="middle-container container">

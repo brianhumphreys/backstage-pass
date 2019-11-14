@@ -1,19 +1,12 @@
-import React, { useState } from "react";
-// import "./EmployeeProfile.css";
-import InitiativeBlock from "../components/InitiativeBlock";
-import MediaBlock from "../components/MediaBlock";
-import MenuBlock from "../components/MenuBlock";
-import DonutChartBlock from "../components/DonutChartBlock";
+import React from "react";
 import RadarChartBlock from "../components/RadarChartBlock/RadarChartBlock";
-import ProfileBlock from "../components/ProfileBlock";
-import GitHubBlock from "../components/GitHubBlock";
-import EmailBlock from "../components/EmailBlock";
-import LoadingBlock from "../components/LoadingBlock";
-import employeeProfilePayload from "../mockData/employeeProfile";
+import initiatives from "../mockData/initiatives";
+import InitiativeBlock from "../components/InitiativeBlock";
+import { signedInEmployee } from "../mockData/employees";
 
 const InitiativePage = () => {
   const location = window.location.href.split('/');
-  const index = employeeProfilePayload.initiatives.findIndex(initiative => {
+  const index = initiatives.findIndex(initiative => {
     return initiative.path === location[location.length-1];
   });
 
@@ -21,13 +14,12 @@ const InitiativePage = () => {
     <body>
       <div className="main-container">
         <div className="left-container container">
-          <ProfileBlock account={employeeProfilePayload.initiatives[index]}/>
+          <InitiativeBlock account={initiatives[index]}/>
         </div>
         <div className="middle-container container">
-          <RadarChartBlock id="skills"/>
+          <RadarChartBlock id="skills" account={signedInEmployee} initiative={initiatives[index]} comparing={true} />
         </div>
         <div className="right-container container">
-          <RadarChartBlock id="otherskills"/>
         </div>
       </div>
     </body>
