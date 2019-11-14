@@ -1101,3 +1101,25 @@ END LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL
   color: white;
   font-size: 16px;
 }
+
+.admin-table-container{
+  display: flex;
+  background: #394264;
+}
+
+.admin-table{
+  margin: 3rem 3rem 3rem 3rem;
+}
+
+.admin-table-row{
+  margin-bottom: 1rem;
+}
+
+.th{
+  color: white;
+}
+
+.table{
+  border-collapse:separate;
+  border-spacing: 30px 30px;
+}
