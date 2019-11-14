@@ -24,7 +24,7 @@ const EducationBlock = ({ account }) => {
     return (
       <div className="tweets block">
         <h2 className="titular">
-          <span className="icon zocial-GitHubBlock"></span>University
+          <span className="icon zocial-GitHubBlock"></span>University Transcript
         </h2>
         <div className="tweet first">
           {account.education.universities.length > 0 ? (
@@ -60,7 +60,7 @@ const EducationBlock = ({ account }) => {
                   onChange={doStuff2}
                 />
                 <div className="subscribe button" onClick={doStuff}>
-                  UPLOAD TRANSCRIPT
+                  UPLOAD
                 </div>
               </form>
             </div>

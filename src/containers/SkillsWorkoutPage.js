@@ -7,24 +7,25 @@ import GitHubBlock from '../components/GitHubBlock';
 import EmailBlock from '../components/EmailBlock';
 import LoadingBlock from '../components/LoadingBlock';
 import RadarChartBlock from '../components/RadarChartBlock/RadarChartBlock';
+import CourseBlock from '../components/CourceBlock'
 
 const SkillsWorkoutPage = ({userData}) => {
     return (
         <body>
         <div className="main-container">
             <div className="left-container container">
-                <MediaBlock/>
-                <MediaBlock/>
-                <MediaBlock/>
+                <CourseBlock/>
+                <CourseBlock/>
+                <CourseBlock/>
             </div>
             <div className="middle-container container">
-                <MediaBlock/>
-                <MediaBlock/>
-                <MediaBlock/>
+                <CourseBlock/>
+                <CourseBlock/>
+                <CourseBlock/>
             </div>
             <div className="right-container container">
-                <MediaBlock/>
-                <MediaBlock/>
+                <CourseBlock/>
+                <CourseBlock/>
             </div>
         </div>
         </body>
