@@ -16,10 +16,6 @@ const GitHubProfile = ({ gitHubData }) => {
         </div>
       </div>
 
-      {/*<div className="user-name">{gitHubData.githubHandle}</div>*/}
-      {/*  <span className="icon fontawesome-star-empty scnd-font-color"></span>*/}
-      {/*<div className="user-name">Repositories: {gitHubData.repositories}</div>*/}
-      {/*<div></div>*/}
     </a>
   );
 };

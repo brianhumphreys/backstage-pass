@@ -46,10 +46,7 @@ const employees = [
             "repositories": null,
         },
         "education": {
-            "bootCamp": [
-                "http://placehold.it/32x32",
-                "http://placehold.it/32x32"
-            ],
+            "bootCamp": [],
             "universities": []
         },
         "resume": [],

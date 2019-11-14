@@ -2,13 +2,15 @@ import React from "react";
 import { getEmployees} from "../store/storeFunctions";
 
 const getScore = (employee) =>{
-    return employee.skills.map(skill => skill.level).reduce((a, b) => a + b, 0)
+    const github = employee && employee.github && 10;
+    console.log(github);
+    return employee.skills.map(skill => skill.level).reduce((a, b) => a + b, 0);
 }
 
 const compare = (employee1, employee2) => {
 
-    const score1 = getScore(employee1)
-    const score2 = getScore(employee2)
+    const score1 = getScore(employee1);
+    const score2 = getScore(employee2);
 
      if (score1 === score2){
          return 0
