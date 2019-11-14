@@ -2,6 +2,17 @@ import employees, { signedInEmployee } from "../mockData/employees";
 import initiatives from "../mockData/initiatives";
 import axios from 'axios';
 
+const signInUser = (e) => {
+  e.preventDefault()
+  const users = employees.filter((employee) => employee.path === e.target.username.value)
+  if (users[0]) {
+    setSignedInUser(users[0])
+    window.location.replace('/accounts/' + users[0].path)
+  } else {
+    alert('Incorrect Credentials')
+  }
+}
+
 const cache = (key, setter, data) => {
     const stringData = localStorage.getItem(key);
     if(stringData) {
@@ -47,14 +58,10 @@ const getNotifications = () => {
 const setGitHubInfo = (githubData, employee) => {
     const employees = getEmployees();
     // console.log(employees);
-    console.log('here');
     const index = employees.findIndex(user => user.name === employee.name);
-    console.log('stupid', employees);
-    console.log('indexed', employees[index]);
     employees[index].github.repositories = githubData.repositories;
     employees[index].github.githubUrl = githubData.githubUrl;
     employees[index].github.githubHandle = githubData.githubHandle;
-    console.log('after stupid', employees[index]);
     setEmployees(employees);
 };
 
@@ -77,5 +84,6 @@ export {
     setNotifications,
     getNotifications,
     setGitHubInfo,
-    getGitHubInfo
+    getGitHubInfo,
+    signInUser
 };

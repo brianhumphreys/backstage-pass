@@ -79,7 +79,7 @@ const employees = [
         "isManager": true,
         "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/34413594060.jpg?alt=media&token=47657590-47bc-4c8d-9db5-c41a93440b6a",
         "name": "Ryatt Humphreys",
-        "path": "AvisJefferson",
+        "path": "RyattHumphreys",
         "gender": "female",
         "email": "avisjefferson@verton.com",
         "phone": "+1 (867) 465-3758",
