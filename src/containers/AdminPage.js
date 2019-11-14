@@ -7,15 +7,16 @@ const getScore = (employee) =>{
 
 const compare = (employee1, employee2) => {
 
- const score1 = employee1.props.children[3].props.children.props.children
- const score2 = employee2.props.children[3].props.children.props.children
+    const score1 = getScore(employee1)
+    const score2 = getScore(employee2)
 
      if (score1 === score2){
          return 0
-     }else if (score1 > score2){
-         return 1
-     } else {
+     }
+     else if (score1 > score2){
          return -1
+     } else {
+         return 1
      }
 }
 
@@ -35,7 +36,8 @@ const AdminPage = () => {
                   </tr>
                   </thead>
                   <tbody>
-                  {getEmployees().map((e, i) => {
+                  {getEmployees().sort(compare).map((e, i) => {
+                      console.error("=============>", getScore(e));
                       return <tr className="admin-table-row">
                           <td align="center">
                               {e.name}
@@ -46,14 +48,14 @@ const AdminPage = () => {
                           <td align="center">
                               {e.about}
                           </td>
-                          <td align="center">
+                          <td align="center" >
                               <strong>{i+1}</strong>
                           </td>
                           <td align="center">
                               <button className="button" onClick={() => window.open(`mailto:test@${e.email}`)}>I'm Interested!</button>
                           </td>
                       </tr>
-                  }).sort(compare)}
+                  })}
                   </tbody>
               </table>
           </div>
