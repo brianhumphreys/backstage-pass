@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import "./EmployeeProfile.css";
 import InitiativeBlock from "../components/InitiativeBlock";
 import employeeProfilePayload from '../mockData/employeeProfile';
 import MediaBlock from '../components/MediaBlock';
@@ -12,20 +11,17 @@ import EmailBlock from '../components/EmailBlock';
 import LoadingBlock from '../components/LoadingBlock';
 import RadarChartBlock from '../components/RadarChartBlock/RadarChartBlock';
 
-
-const EmployeeProfile = () => {
+const EmployeeProfile = ({userData}) => {
     return (
         <body>
         <div className="main-container">
-
-
             <div className="left-container container">
-                <MenuBlock/>
+                <MenuBlock />
                 <DonutChartBlock/>
                 <LoadingBlock/>
             </div>
             <div className="middle-container container">
-                {/*<ProfileBlock/>*/}
+                <ProfileBlock userData={userData}/>
                 <GitHubBlock/>
                 <MediaBlock/>
             </div>
