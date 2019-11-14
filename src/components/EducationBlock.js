@@ -30,7 +30,9 @@ const EducationBlock = ({ account }) => {
           {account.education.universities.length > 0 ? (
 
             <div className="input-container">
-              <div>You Graduated!</div>
+                <div>
+                    <span className="scnd-font-color"></span>You Graduated!
+                </div>
               <svg
                 width="24"
                 height="24"

@@ -20,6 +20,7 @@ const EmployeeProfile = () => {
     const employee = employees[index];
 
     const getScore = (employee) =>{
+        if(employee === null) return;
         const github = employee && employee.github && 10;
         const bootcamp = employee && employee.education && employee.education.bootCamp && employee.education.bootCamp.length > 0 && 10;
         const university = employee && employee.education && employee.education.universities && employee.education.universities.length > 0 && 10;

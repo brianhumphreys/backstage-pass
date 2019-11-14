@@ -4,7 +4,7 @@ const MoreSocialBlock = () => {
   return (
       <ul className="social block">
           <li>
-              <a href="#50">
+              <a>
                   <div className="facebook icon">
                       <span className="zocial-facebook"></span>
                   </div>
@@ -12,7 +12,7 @@ const MoreSocialBlock = () => {
               </a>
           </li>
           <li>
-              <a href="#51">
+              <a>
                   <div className="twitter icon">
                       <span className="zocial-twitter"></span>
                   </div>
@@ -20,7 +20,7 @@ const MoreSocialBlock = () => {
               </a>
           </li>
           <li>
-              <a href="#52">
+              <a>
                   <div className="googleplus icon">
                       <span className="zocial-googleplus"></span>
                   </div>
