@@ -26,8 +26,6 @@ const RadarChartBlock = ({ id, account, comparing, initiative }) => {
           <div id="tooltip" className="tooltip-placeholder"></div>
         </div>
         <canvas id={id} width="300" height="200"></canvas>
-        <BottomTiles />
-        <BottomTiles />
       </div>
     </Link>
   );

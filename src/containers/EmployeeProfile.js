@@ -32,8 +32,8 @@ const EmployeeProfile = () => {
 
     console.log(getScore(employee));
 
-    // const hasSkills = employee.skills.map(skill => skill.level).reduce((a, b) => a + b, 0) !== 0
-    const hasSkills = false
+    const hasSkills = employee.skills.map(skill => skill.level).reduce((a, b) => a + b, 0) !== 0
+    // const hasSkills = false
 
 
     return (
@@ -42,13 +42,12 @@ const EmployeeProfile = () => {
             <div className="left-container container">
                 <MenuBlock />
                 <DonutChartBlock/>
-                <LoadingBlock/>
+                <MediaBlock/>
             </div>
             <div className="middle-container container">
                 <ProfileBlock account={employee}/>
                 <GitHubBlock account={employee}/>
                 <EducationBlock account={employee}/>
-                <MediaBlock/>
             </div>
             <div className="right-container container">
                 {
@@ -58,6 +57,7 @@ const EmployeeProfile = () => {
                         <SkillQuestionnaireBlock />
                 }
                 <EmailBlock/>
+                <LoadingBlock/>
             </div>
         </div>
         </body>
