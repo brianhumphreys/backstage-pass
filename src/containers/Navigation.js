@@ -7,7 +7,7 @@ const NavigationBar = () => {
       <ul className="header-menu horizontal-list">
         <li>
           <Link to="/">
-            <div className="header-menu-tab" href="2">
+            <div className="header-menu-tab">
               <span className="icon fontawesome-user scnd-font-color"></span>
               Account
             </div>

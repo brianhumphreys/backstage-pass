@@ -11,9 +11,10 @@ import GitHubBlock from "../components/GitHubBlock";
 import EmailBlock from "../components/EmailBlock";
 import LoadingBlock from "../components/LoadingBlock";
 import employeeProfilePayload from "../mockData/employeeProfile";
+import InitiativeCards from "../components/InitiativeCards/InitiativeCards";
 
 const InitiativePage = () => {
-  console.log(window.location.href);
+  // console.log(employeeProfilePayload);
   const initiatives = employeeProfilePayload.initiatives;
 
   return (
@@ -21,9 +22,12 @@ const InitiativePage = () => {
       <div className="main-container">
         <div className="left-container container">
           {initiatives.map((initiative, i) => {
-            if (i % 3 == 0) {
-              return <Link to={`initiatives/${initiative.name}`}>
-                  <ProfileBlock account={initiative}/>;
+              // console.log(initiative);
+            if (i % 3 === 0) {
+              return <Link key={i} to={`initiatives/${initiative.path}`}>
+                  {/*{console.log(initiative)}*/}
+                  <ProfileBlock account={initiative}/>
+                  {/*<InitiativeCards/>*/}
               </Link>
             }
             return null;
@@ -31,9 +35,10 @@ const InitiativePage = () => {
         </div>
         <div className="middle-container container">
           {initiatives.map((initiative, i) => {
-            if (i % 3 == 1) {
-              return <Link to={`initiatives/${initiative.name}`}>
-                  <ProfileBlock account={initiative}/>;
+            if (i % 3 === 1) {
+              return <Link key={i} to={`initiatives/${initiative.path}`}>
+                  <ProfileBlock account={initiative}/>
+                  {/*<InitiativeCards/>*/}
               </Link>
             }
             return null;
@@ -41,9 +46,10 @@ const InitiativePage = () => {
         </div>
         <div className="right-container container">
           {initiatives.map((initiative, i) => {
-            if (i % 3 == 2) {
-              return <Link to={`initiatives/${initiative.name}`}>
-                  <ProfileBlock account={initiative}/>;
+            if (i % 3 === 2) {
+              return <Link key={i} to={`initiatives/${initiative.path}`}>
+                  <ProfileBlock account={initiative}/>
+                  {/*<InitiativeCards/>*/}
               </Link>
             }
             return null;

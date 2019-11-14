@@ -14,7 +14,7 @@ import RadarChartBlock from '../components/RadarChartBlock/RadarChartBlock';
 const ManagerProfile = () => {
 
 
-    console.log(employeeProfilePayload);
+    // console.log(employeeProfilePayload);
 
 
     return (
@@ -28,7 +28,7 @@ const ManagerProfile = () => {
                 <MediaBlock/>
             </div>
             <div className="middle-container container">
-                <ProfileBlock/>
+                {/*<ProfileBlock/>*/}
                 <GitHubBlock/>
             </div>
             <div className="right-container container">

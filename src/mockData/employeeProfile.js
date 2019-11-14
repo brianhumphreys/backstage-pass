@@ -5,8 +5,9 @@ const employeeProfilePayload = {
   initiatives: [
     {
       name: "Quantum",
-      description: "This initiative is the most initiativiest initiative out there. so get initiating.",
-      imageUrl: "",
+      path: "quantum",
+      bio: "This initiative is the most initiativiest initiative out there. so get initiating.",
+      imageUrl: "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/gettyimages-913244804-612x612.jpg?alt=media&token=f86d4e27-aa74-4e32-b4b1-2ca8088323ac",
       skills: [
         {
           skill: "team work",
@@ -35,8 +36,10 @@ const employeeProfilePayload = {
       ]
     },
     {
-      name: "Quantum",
-      description: "This ones pretty cool. look at me! Im Mr. Initiative",
+      name: "Drove",
+      path: "drove",
+      bio: "This ones pretty cool. look at me! Im Mr. Initiative",
+      imageUrl: "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/gettyimages-913244804-612x612.jpg?alt=media&token=f86d4e27-aa74-4e32-b4b1-2ca8088323ac",
       skills: [
         {
           skill: "team work",
@@ -65,8 +68,10 @@ const employeeProfilePayload = {
       ]
     },
     {
-      name: "Quantum",
-      description: "This ones pretty cool. look at me! Im Mr. Initiative",
+      name: "Uber",
+      path: "uber",
+      bio: "This ones pretty cool. look at me! Im Mr. Initiative",
+      imageUrl: "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/gettyimages-913244804-612x612.jpg?alt=media&token=f86d4e27-aa74-4e32-b4b1-2ca8088323ac",
       skills: [
         {
           skill: "team work",
@@ -95,8 +100,10 @@ const employeeProfilePayload = {
       ]
     },
     {
-      name: "Quantum",
-      description: "This ones pretty cool. look at me! Im Mr. Initiative",
+      name: "Virtual Intake",
+      path: "virtualintake",
+      bio: "This ones pretty cool. look at me! Im Mr. Initiative",
+      imageUrl: "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/gettyimages-913244804-612x612.jpg?alt=media&token=f86d4e27-aa74-4e32-b4b1-2ca8088323ac",
       skills: [
         {
           skill: "team work",

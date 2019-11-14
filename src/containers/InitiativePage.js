@@ -9,14 +9,23 @@ import ProfileBlock from "../components/ProfileBlock";
 import GitHubBlock from "../components/GitHubBlock";
 import EmailBlock from "../components/EmailBlock";
 import LoadingBlock from "../components/LoadingBlock";
+import employeeProfilePayload from "../mockData/employeeProfile";
 
 const InitiativePage = () => {
-  console.log(window.location.href);
+  const location = window.location.href.split('/');
+  const index = employeeProfilePayload.initiatives.findIndex(initiative => {
+    console.log(location[location.length-1]);
+    console.log(initiative);
+    return initiative.path === location[location.length-1];
+  });
+
+  console.log('wowowow', employeeProfilePayload.initiatives[index]);
+
   return (
     <body>
       <div className="main-container">
         <div className="left-container container">
-          <ProfileBlock />
+          <ProfileBlock account={employeeProfilePayload.initiatives[index]}/>
         </div>
         <div className="middle-container container">
           <RadarChartBlock id="skills"/>
