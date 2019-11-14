@@ -258,6 +258,7 @@ header {
   display: block;
   line-height: 74px;
   font-size: 17px;
+  font-weight: bold;
   -webkit-transition: background .3s;
   transition: background .3s;
 }

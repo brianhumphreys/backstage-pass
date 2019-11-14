@@ -54,7 +54,6 @@ const AdminPage = () => {
                           </td>
                       </tr>
                   }).sort(compare)}
-
                   </tbody>
               </table>
           </div>
