@@ -122,6 +122,17 @@ const setUniversities = employee => {
     setEmployees(employees);
 };
 
+const setScore = (account, skillIndex) => {
+    console.log(account);
+    const employees = getEmployees();
+    console.log('jhfdjskjfk', employees);
+    const index = employees.findIndex(user => user.name === account.name);
+    console.log(employees[index].skills);
+    employees[index].skills[skillIndex].level = 10;
+    console.log(employees[index].skills);
+    setEmployees(employees);
+};
+
 export {
     setSignedInUser,
     getSignedInUser,
@@ -135,5 +146,6 @@ export {
     getGitHubInfo,
     signInUser,
     setUniversities,
-    getUniversities
+    getUniversities,
+    setScore
 };

@@ -1,14 +1,16 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 import GitHubProfile from "./GitHubProfile";
-import { getGitHubInfo, setGitHubInfo } from "../store/storeFunctions";
+import {getSignedInUser, setScore} from "../store/storeFunctions";
 
 const CourseBlock = ({ account }) => {
     const upSkill = () => {
         console.log('jkfhdsjkf;hdskfajndsklfjklds');
+        setScore(getSignedInUser(), 1)
     }
+    // href={"https://github.com/"}
   return (
-    <a href={"https://github.com/"} onClick={upSkill}>
+    <a  onClick={upSkill}>
       <div className="tweets block">
         <h2 className="titular">
           <span className="icon zocial-GitHubBlock"></span>GitHub

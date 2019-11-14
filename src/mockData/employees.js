@@ -10,7 +10,7 @@ const employees = [
         "name": "Brian Humphreys",
         "path": "BrianHumphreys",
         "gender": "male",
-        "email": "gregoryknight@verton.com",
+        "email": "humbfrancis@gmail.com",
         "phone": "+1 (823) 456-3091",
         "address": "519 Manhattan Avenue, Wolcott, Michigan, 6193",
         "about": "Excepteur enim est esse elit. Do et amet sint nulla ut elit. Consectetur ex ut laborum nisi quis ad anim officia reprehenderit qui proident id consequat. Esse ullamco proident incididunt cillum sunt nulla dolor veniam velit. Excepteur deserunt qui et consectetur ipsum elit. Nulla elit eu magna ipsum ipsum. Officia cupidatat id fugiat cillum consectetur elit eu dolor sint fugiat excepteur voluptate.\r\n",
