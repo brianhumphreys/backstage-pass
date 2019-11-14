@@ -5,6 +5,7 @@ import DonutChartBlock from '../components/DonutChartBlock';
 import ProfileBlock from '../components/ProfileBlock';
 import GitHubBlock from '../components/GitHubBlock';
 import EmailBlock from '../components/EmailBlock';
+import SkillQuestionnaireBlock from '../components/SkillQuestionnaireBlock'
 import LoadingBlock from '../components/LoadingBlock';
 import RadarChartBlock from '../components/RadarChartBlock/RadarChartBlock';
 import { getEmployees} from "../store/storeFunctions";
@@ -16,6 +17,10 @@ const EmployeeProfile = () => {
         return employee.name.split(' ').join('') === location[location.length-1];
     });
     const employee = employees[index];
+
+    // const hasSkills = employee.skills.map(skill => skill.level).reduce((a, b) => a + b, 0) !== 0
+    const hasSkills = false
+
 
     return (
         <body>
@@ -31,7 +36,12 @@ const EmployeeProfile = () => {
                 <MediaBlock/>
             </div>
             <div className="right-container container">
-                <RadarChartBlock id="employeeSkills" account={employee} comparing={false}/>
+                {
+                    hasSkills ?
+                        <RadarChartBlock id="employeeSkills" account={employee} comparing={false}/>
+                        :
+                        <SkillQuestionnaireBlock />
+                }
                 <EmailBlock/>
             </div>
         </div>
