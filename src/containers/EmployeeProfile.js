@@ -25,7 +25,7 @@ const EmployeeProfile = () => {
                 <LoadingBlock/>
             </div>
             <div className="middle-container container">
-                {/*<ProfileBlock/>*/}
+                <ProfileBlock/>
                 <GitHubBlock/>
                 <MediaBlock/>
             </div>

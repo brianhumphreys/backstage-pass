@@ -14,12 +14,8 @@ import employeeProfilePayload from "../mockData/employeeProfile";
 const InitiativePage = () => {
   const location = window.location.href.split('/');
   const index = employeeProfilePayload.initiatives.findIndex(initiative => {
-    console.log(location[location.length-1]);
-    console.log(initiative);
     return initiative.path === location[location.length-1];
   });
-
-  console.log('wowowow', employeeProfilePayload.initiatives[index]);
 
   return (
     <body>
