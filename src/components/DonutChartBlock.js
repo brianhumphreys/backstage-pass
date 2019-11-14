@@ -1,7 +1,8 @@
 import React from 'react';
 import BottomTiles from "./subcomponents/BottomTiles";
 
-const DonutChartBlock = () => {
+const DonutChartBlock = ({ score }) => {
+    console.log('SOCNDJSKANF: ', score);
     return  (
         <div className="donut-chart-block block">
             <h2 className="titular">OS AUDIENCE STATS</h2>
@@ -19,12 +20,11 @@ const DonutChartBlock = () => {
                     <div className="quesito linux" data-rel="9"></div>
                 </div>
                 <p className="center-date">
-                    JUNE
+                    SCORE
                     <br />
-                    <span className="scnd-font-color">2013</span>
+                    <span className="scnd-font-color">{score}</span>
                 </p>
             </div>
-            <BottomTiles />
             <BottomTiles />
         </div>
     );

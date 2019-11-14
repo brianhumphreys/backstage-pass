@@ -14,50 +14,47 @@ const GitHubBlock = ({ account }) => {
     event.preventDefault();
     setGitHubUserName(event.target.gitHubName.value);
   };
-  // const handleGithubFetch = () => {
-  //     getGitHubInfo(account, gitHubUserName)
-  //         .then(({ data }) => {
-  //             updateGitHubData(data);
-  //         })
-  //         .catch(e => {
-  //             updateGitHubData(account.github);
-  //         });
-  // }
   useEffect(() => {
-    console.log("doing stuff");
-
+    console.log(document.getElementById("githubInput"));
+    if (document.getElementById("githubInput") && document.getElementById("githubInput").value !== "brianhumphreys") {
+      return;
+    }
     getGitHubInfo(account, gitHubUserName)
       .then(({ data }) => {
-        // console.log("github", data);
-
+        console.log("github", data);
+        if (!data.login) return;
         updateGitHubData({
           githubHandle: data.login,
           githubUrl: `https://github.com/${data.login}`,
           repositories: data.public_repos
         });
-          setGitHubInfo({
-              githubHandle: data.login,
-              githubUrl: `https://github.com/${data.login}`,
-              repositories: data.public_repos
-          }, account);
+        setGitHubInfo(
+          {
+            githubHandle: data.login,
+            githubUrl: `https://github.com/${data.login}`,
+            repositories: data.public_repos
+          },
+          account
+        );
       })
       .catch(e => {
         updateGitHubData(account.github);
       });
-  }, [gitHubUserName]);
+  }, [account, gitHubUserName]);
   return (
     <div className="tweets block">
       <h2 className="titular">
         <span className="icon zocial-GitHubBlock"></span>GitHub
       </h2>
       <div className="tweet first">
-          {console.log(gitHubData)}
+        {console.log(gitHubData)}
         {gitHubUserName && gitHubData.githubHandle ? (
           <GitHubProfile gitHubData={gitHubData} />
         ) : (
           <div className="input-container">
             <form onSubmit={updateGitHubUserName}>
               <input
+                id="githubInput"
                 type="text"
                 name="gitHubName"
                 placeholder="Add your gihub Profile"
