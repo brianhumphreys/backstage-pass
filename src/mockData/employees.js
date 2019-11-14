@@ -2,18 +2,18 @@ import React from 'react';
 
 const employees = [
     {
-        "id": "5dccc24bc986301fce78fa1c",
+        "id": "5dcd582e81a0f55861118f91",
         "index": 0,
-        "guid": "58cb3eb4-560e-406f-8868-808c0f85b4e7",
-        "isManager": false,
-        "githubUrl": "http://github.com",
+        "guid": "9ed5514b-2bc9-4efa-b3dd-166d58113fb0",
+        "isManager": true,
         "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/34462505913.jpg?alt=media&token=f18c31be-3039-43ea-b1d3-a9014c6ee71d",
         "name": "Brian Humphreys",
+        "path": "BrianHumphreys",
         "gender": "male",
-        "email": "dorseyjustice@avit.com",
-        "phone": "+1 (921) 561-3406",
-        "address": "193 Vandam Street, Bannock, Georgia, 7264",
-        "about": "Qui nisi duis aliqua ad cillum magna duis irure ullamco minim aliqua magna sunt sit. Pariatur consectetur eu exercitation duis. In proident aliquip sit aliqua eiusmod. Sit ea veniam anim id aliquip fugiat pariatur irure occaecat veniam elit consequat.\r\n",
+        "email": "gregoryknight@verton.com",
+        "phone": "+1 (823) 456-3091",
+        "address": "519 Manhattan Avenue, Wolcott, Michigan, 6193",
+        "about": "Excepteur enim est esse elit. Do et amet sint nulla ut elit. Consectetur ex ut laborum nisi quis ad anim officia reprehenderit qui proident id consequat. Esse ullamco proident incididunt cillum sunt nulla dolor veniam velit. Excepteur deserunt qui et consectetur ipsum elit. Nulla elit eu magna ipsum ipsum. Officia cupidatat id fugiat cillum consectetur elit eu dolor sint fugiat excepteur voluptate.\r\n",
         "skills": [
             {
                 "skill": "database",
@@ -21,343 +21,297 @@ const employees = [
             },
             {
                 "skill": "devtool",
-                "level": 8
+                "level": 1
             },
             {
                 "skill": "frontend",
-                "level": 0
+                "level": 9
             },
             {
                 "skill": "objectoriented",
-                "level": 8
+                "level": 7
             },
             {
                 "skill": "algorithmic",
-                "level": 0
+                "level": 2
             },
             {
                 "skill": "pair",
-                "level": 5
+                "level": 9
             }
         ],
+        "github": {
+            "githubUrl": null,
+            "githubHandle": null,
+            "repositories": null,
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": []
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b02a4aa68203a5d8b",
+        "id": "5dcd582e61f566ca1c0a4307",
         "index": 1,
-        "guid": "14951966-2b07-4b6d-af36-16fe7b1a6bd4",
+        "guid": "7ae1583c-a8e8-4f07-97af-4461eb54fa25",
         "isManager": true,
-        "githubUrl": "http://github.com",
         "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/34413594060.jpg?alt=media&token=47657590-47bc-4c8d-9db5-c41a93440b6a",
         "name": "Ryatt Humphreys",
-        "gender": "male",
-        "email": "benjaminschneider@avit.com",
-        "phone": "+1 (825) 582-2634",
-        "address": "561 Leonora Court, Deltaville, New Jersey, 7811",
-        "about": "Consequat ullamco pariatur et officia nostrud enim est. Est occaecat occaecat consectetur velit enim quis id sunt magna ea Lorem cillum labore. Tempor aliqua ex minim sit commodo dolor veniam. Cupidatat et sunt deserunt do laboris aliqua id. Cupidatat culpa voluptate irure occaecat aliquip labore tempor voluptate dolor ullamco consectetur ex incididunt. Id in laborum incididunt aliquip.\r\n",
+        "path": "AvisJefferson",
+        "gender": "female",
+        "email": "avisjefferson@verton.com",
+        "phone": "+1 (867) 465-3758",
+        "address": "381 Forrest Street, Crenshaw, New Mexico, 1119",
+        "about": "Tempor ullamco aliqua non adipisicing commodo proident minim. Occaecat fugiat commodo est cupidatat anim irure aliqua minim duis. Fugiat Lorem adipisicing laborum dolor laboris exercitation qui culpa est id.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 9
+                "level": 0
             },
             {
                 "skill": "devtool",
-                "level": 9
+                "level": 10
             },
             {
                 "skill": "frontend",
-                "level": 1
+                "level": 2
             },
             {
                 "skill": "objectoriented",
-                "level": 4
+                "level": 7
             },
             {
                 "skill": "algorithmic",
-                "level": 8
+                "level": 2
             },
             {
                 "skill": "pair",
-                "level": 9
+                "level": 1
             }
+        ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Blair",
+            "repositories": 4
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [
+            "http://placehold.it/32x32"
         ],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": false
             }
         ]
     },
     {
-        "id": "5dccc24b47261cc8a0d2ab7f",
+        "id": "5dcd582e1a27e0e4ebc51eb9",
         "index": 2,
-        "guid": "b81ba50d-3554-4e73-85c5-55d400ca3896",
+        "guid": "0c89cf00-a85f-4fd9-965c-792e5802aab9",
         "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://api.adorable.io/avatars/285/abott@adorable.png",
-        "name": "Kelsey Strong",
-        "gender": "female",
-        "email": "johnnierhodes@avit.com",
-        "phone": "+1 (835) 429-3457",
-        "address": "723 Jefferson Avenue, Eastvale, Minnesota, 1594",
-        "about": "Minim quis esse dolore consequat sunt sunt id elit in aliquip. Ipsum ex deserunt occaecat minim occaecat ut ad dolor do exercitation eu esse eu. Nostrud dolor officia proident exercitation ea sit. Aliqua labore consequat fugiat eiusmod velit deserunt est Lorem ut enim et dolore. Cillum excepteur esse ipsum veniam et. Sunt velit anim ex excepteur aliquip aute minim consectetur veniam sit velit.\r\n",
+        "picture": "http://placehold.it/32x32",
+        "name": "Ella Jackson",
+        "path": "CobbDennis",
+        "gender": "male",
+        "email": "cobbdennis@verton.com",
+        "phone": "+1 (891) 477-3098",
+        "address": "769 Gunnison Court, Movico, Texas, 530",
+        "about": "Anim dolor aliqua id mollit culpa qui. Et enim non ex eiusmod nulla dolore aute. Id cillum proident qui sit Lorem sunt et laborum dolore. Nulla irure pariatur duis anim fugiat. Nulla dolore aliqua pariatur est est duis consectetur aute. Esse eu labore ad do magna consectetur elit do.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 8
+                "level": 1
             },
             {
                 "skill": "devtool",
-                "level": 9
+                "level": 8
             },
             {
                 "skill": "frontend",
-                "level": 2
+                "level": 7
             },
             {
                 "skill": "objectoriented",
-                "level": 1
+                "level": 2
             },
             {
                 "skill": "algorithmic",
-                "level": 1
+                "level": 2
             },
             {
                 "skill": "pair",
-                "level": 3
+                "level": 10
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Rosanne",
+            "repositories": 5
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b8e09cc5053811e1f",
+        "id": "5dcd582e9e321105e87d3b57",
         "index": 3,
-        "guid": "b0f95cf3-e80b-414f-ac15-30eff14ee5ed",
+        "guid": "e0d0b89f-d8c0-4e8b-a201-056be185715a",
         "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Donaldson Petty",
-        "gender": "male",
-        "email": "kirklandcalderon@avit.com",
-        "phone": "+1 (942) 558-3208",
-        "address": "123 Ross Street, Ada, Wisconsin, 9987",
-        "about": "Ea elit officia cupidatat esse occaecat dolore excepteur minim incididunt. Labore quis veniam sit reprehenderit quis qui est in ea consectetur amet amet elit officia. Dolore eiusmod consectetur eiusmod voluptate incididunt officia est non aliquip irure Lorem elit aute ea. Cupidatat laborum deserunt occaecat velit ex proident est tempor consectetur in occaecat consectetur veniam.\r\n",
+        "picture": "http://placehold.it/32x32",
+        "name": "Kathie Wooten",
+        "path": "MayraMeadows",
+        "gender": "female",
+        "email": "mayrameadows@verton.com",
+        "phone": "+1 (994) 409-3569",
+        "address": "981 Anna Court, Brantleyville, Utah, 2805",
+        "about": "Voluptate in dolor aute ex ea nulla veniam nostrud ad adipisicing cupidatat veniam. Aliqua esse sit tempor aute ipsum commodo reprehenderit velit. Magna officia amet labore exercitation laboris ex laborum dolore. Nulla veniam dolor aute incididunt reprehenderit aliqua non enim aliquip mollit.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 4
-            },
-            {
-                "skill": "devtool",
-                "level": 3
-            },
-            {
-                "skill": "frontend",
-                "level": 4
-            },
-            {
-                "skill": "objectoriented",
                 "level": 8
             },
             {
+                "skill": "devtool",
+                "level": 9
+            },
+            {
+                "skill": "frontend",
+                "level": 3
+            },
+            {
+                "skill": "objectoriented",
+                "level": 3
+            },
+            {
                 "skill": "algorithmic",
-                "level": 6
+                "level": 5
             },
             {
                 "skill": "pair",
-                "level": 5
+                "level": 0
             }
+        ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Tammy",
+            "repositories": 0
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [
+            "http://placehold.it/32x32"
         ],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             }
         ]
     },
     {
-        "id": "5dccc24bf5db088f62368abf",
+        "id": "5dcd582ea58d724a3ad8fc76",
         "index": 4,
-        "guid": "646c1743-a895-4740-8c61-7af09e4ca2cd",
+        "guid": "bf1a39e3-5515-4248-9f98-bdacc9afc6c2",
         "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Warren Conner",
-        "gender": "female",
-        "email": "angelinamullen@avit.com",
-        "phone": "+1 (988) 508-3499",
-        "address": "258 Hawthorne Street, Kilbourne, Oregon, 6565",
-        "about": "Eiusmod proident ut officia consectetur laboris sunt veniam elit. Elit magna esse sit anim cillum do nisi qui ex. In proident ad ipsum do dolor. Mollit exercitation ipsum est veniam eiusmod elit sint nostrud qui. Quis nulla aute dolore proident voluptate. Aliquip amet quis consequat nisi sit dolore est tempor consequat ea duis. Commodo sunt eiusmod ad adipisicing dolore consectetur ad pariatur cupidatat est fugiat proident elit.\r\n",
+        "picture": "http://placehold.it/32x32",
+        "name": "Sosa Dominguez",
+        "path": "BentonOneill",
+        "gender": "male",
+        "email": "bentononeill@verton.com",
+        "phone": "+1 (911) 585-2513",
+        "address": "601 Everit Street, Thornport, Montana, 9832",
+        "about": "Lorem ullamco non fugiat velit ex voluptate consequat in minim fugiat nulla. Sint tempor aliquip voluptate tempor in ut nostrud. Ad dolore pariatur dolore irure ipsum minim anim culpa ullamco.\r\n",
         "skills": [
             {
                 "skill": "database",
@@ -369,11 +323,11 @@ const employees = [
             },
             {
                 "skill": "frontend",
-                "level": 3
+                "level": 1
             },
             {
                 "skill": "objectoriented",
-                "level": 10
+                "level": 5
             },
             {
                 "skill": "algorithmic",
@@ -381,69 +335,55 @@ const employees = [
             },
             {
                 "skill": "pair",
-                "level": 0
+                "level": 5
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Stephenson",
+            "repositories": 9
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    true,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b6389d082687584da",
+        "id": "5dcd582e21c89646c4dde8f4",
         "index": 5,
-        "guid": "691dda66-e066-4cbe-b456-34f20e807a47",
+        "guid": "8bbae4a6-0ef8-4933-a008-b41fc55113c1",
         "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Holland Medina",
-        "gender": "male",
-        "email": "toddcraig@avit.com",
-        "phone": "+1 (882) 581-3343",
-        "address": "681 Royce Place, Venice, Marshall Islands, 4901",
-        "about": "Dolor id est ullamco voluptate amet est ipsum incididunt non. Fugiat ipsum ea pariatur dolor exercitation sit labore anim velit ipsum. Eu reprehenderit ut aliquip qui consectetur id nulla ex est aute ullamco voluptate.\r\n",
+        "picture": "http://placehold.it/32x32",
+        "name": "Horton Vang",
+        "path": "EloiseRowe",
+        "gender": "female",
+        "email": "eloiserowe@verton.com",
+        "phone": "+1 (919) 416-2836",
+        "address": "860 Story Court, Calverton, South Dakota, 9013",
+        "about": "Quis proident commodo elit reprehenderit ipsum aute ullamco. Incididunt duis nostrud nostrud aute pariatur velit exercitation qui aliquip consequat officia in ullamco. Enim cillum proident irure qui qui ex. Adipisicing consequat mollit fugiat commodo ad labore cupidatat enim aliquip exercitation ipsum commodo.\r\n",
         "skills": [
             {
                 "skill": "database",
@@ -451,441 +391,382 @@ const employees = [
             },
             {
                 "skill": "devtool",
-                "level": 1
+                "level": 0
             },
             {
                 "skill": "frontend",
-                "level": 4
+                "level": 0
             },
             {
                 "skill": "objectoriented",
-                "level": 1
+                "level": 10
             },
             {
                 "skill": "algorithmic",
-                "level": 9
+                "level": 3
             },
             {
                 "skill": "pair",
-                "level": 4
+                "level": 5
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Barbra",
+            "repositories": 7
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32"
+            ],
+            "universities": []
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b989e2b32ff8d7d94",
+        "id": "5dcd582e514844352d1f3f63",
         "index": 6,
-        "guid": "1ebf0193-5f5d-43cb-8f05-28ee42c03a28",
+        "guid": "86919082-ee98-47e2-8634-1b85e4d6afea",
         "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Cobb Sanford",
+        "picture": "http://placehold.it/32x32",
+        "name": "Eileen Butler",
+        "path": "ChristyMiddleton",
         "gender": "female",
-        "email": "whitneydillon@avit.com",
-        "phone": "+1 (893) 503-3558",
-        "address": "226 Elton Street, Winfred, Maine, 7788",
-        "about": "Eu Lorem excepteur non elit proident deserunt veniam exercitation ea dolor irure. Amet mollit dolore fugiat amet exercitation dolor elit. Mollit laborum ut aliqua non mollit ut et non. Proident voluptate do reprehenderit mollit. Officia quis eiusmod veniam eu reprehenderit tempor consectetur est.\r\n",
+        "email": "christymiddleton@verton.com",
+        "phone": "+1 (811) 582-2560",
+        "address": "748 Havens Place, Kula, Ohio, 1399",
+        "about": "Do aute nulla irure pariatur est. Duis sit dolor aliquip tempor quis. Anim anim eiusmod dolore veniam tempor et sit dolor aliqua duis cupidatat ipsum. Eiusmod deserunt sint velit nostrud exercitation veniam est ullamco. Reprehenderit labore proident exercitation consequat aliqua incididunt. Ipsum occaecat exercitation non exercitation magna occaecat nulla sint.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 2
+                "level": 7
             },
             {
                 "skill": "devtool",
-                "level": 3
+                "level": 1
             },
             {
                 "skill": "frontend",
-                "level": 5
+                "level": 1
             },
             {
                 "skill": "objectoriented",
-                "level": 4
+                "level": 5
             },
             {
                 "skill": "algorithmic",
-                "level": 9
+                "level": 0
             },
             {
                 "skill": "pair",
-                "level": 8
+                "level": 6
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Gibbs",
+            "repositories": 2
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b375f47405eca019e",
+        "id": "5dcd582eb8064b690d2d5f05",
         "index": 7,
-        "guid": "b7aba6e4-89a1-4766-adeb-f9dde871e3ec",
+        "guid": "885f7f0c-5e10-486e-9089-3343b779b440",
         "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Cecile Petersen",
-        "gender": "male",
-        "email": "ochoagoodman@avit.com",
-        "phone": "+1 (817) 505-2515",
-        "address": "259 Prospect Place, Mappsville, Guam, 2029",
-        "about": "Eiusmod elit excepteur amet occaecat laboris adipisicing veniam labore sit. Sit pariatur ea ullamco est voluptate elit laborum non et ut voluptate officia. Aliqua minim consectetur quis minim ipsum. Nostrud commodo id adipisicing culpa in enim minim cupidatat quis ullamco. Est proident anim ea exercitation ad.\r\n",
+        "picture": "http://placehold.it/32x32",
+        "name": "Dianna Rios",
+        "path": "MagdalenaMerrill",
+        "gender": "female",
+        "email": "magdalenamerrill@verton.com",
+        "phone": "+1 (887) 501-3016",
+        "address": "607 Joralemon Street, Utting, West Virginia, 4357",
+        "about": "Minim velit nisi dolore in enim sunt anim consequat mollit. Do consequat minim nulla anim consequat ut. Cupidatat id irure deserunt aliquip fugiat cupidatat reprehenderit. Excepteur et veniam elit reprehenderit ut voluptate eu adipisicing anim ex elit ullamco non. Excepteur ad officia laboris eu ad. Voluptate occaecat magna consectetur nisi consectetur officia veniam ea aute tempor.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 5
-            },
-            {
-                "skill": "devtool",
-                "level": 7
-            },
-            {
-                "skill": "frontend",
-                "level": 6
-            },
-            {
-                "skill": "objectoriented",
                 "level": 0
             },
             {
-                "skill": "algorithmic",
+                "skill": "devtool",
+                "level": 6
+            },
+            {
+                "skill": "frontend",
+                "level": 7
+            },
+            {
+                "skill": "objectoriented",
                 "level": 8
+            },
+            {
+                "skill": "algorithmic",
+                "level": 6
             },
             {
                 "skill": "pair",
                 "level": 1
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Casandra",
+            "repositories": 10
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b05044f91e4855eef",
+        "id": "5dcd582e3d877d09918dceb9",
         "index": 8,
-        "guid": "19ac2016-4872-4613-b5b7-e925571b8596",
-        "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Velma Drake",
-        "gender": "male",
-        "email": "howardlee@avit.com",
-        "phone": "+1 (931) 405-3917",
-        "address": "911 Lawton Street, Wadsworth, Nevada, 318",
-        "about": "Eu ea magna laboris veniam occaecat. Tempor reprehenderit non dolore esse duis labore. Non ut incididunt dolor consequat labore incididunt Lorem aute amet. Laboris exercitation sint ex nisi ipsum ullamco.\r\n",
+        "guid": "11e1beff-bf3a-4213-97a1-25b3cbd91f22",
+        "isManager": false,
+        "picture": "http://placehold.it/32x32",
+        "name": "Mccarty Vincent",
+        "path": "MadgeGarrett",
+        "gender": "female",
+        "email": "madgegarrett@verton.com",
+        "phone": "+1 (983) 432-3428",
+        "address": "284 John Street, Kraemer, Indiana, 4783",
+        "about": "Occaecat incididunt pariatur nostrud culpa nostrud laboris velit dolor fugiat mollit veniam in. Laboris voluptate irure dolore duis Lorem velit irure eiusmod ipsum esse. Eu nulla culpa tempor veniam tempor magna fugiat quis duis tempor aliquip aliqua. Ut sint irure proident nulla fugiat officia sunt sint qui veniam. Laboris deserunt aliqua est eu anim amet occaecat ad ad quis pariatur minim.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 6
+                "level": 9
             },
             {
                 "skill": "devtool",
-                "level": 3
-            },
-            {
-                "skill": "frontend",
-                "level": 10
-            },
-            {
-                "skill": "objectoriented",
                 "level": 8
             },
             {
+                "skill": "frontend",
+                "level": 9
+            },
+            {
+                "skill": "objectoriented",
+                "level": 1
+            },
+            {
                 "skill": "algorithmic",
-                "level": 3
+                "level": 8
             },
             {
                 "skill": "pair",
-                "level": 10
+                "level": 3
             }
+        ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Summer",
+            "repositories": 2
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [
+            "http://placehold.it/32x32"
         ],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    true,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             }
         ]
     },
     {
-        "id": "5dccc24b3591a5ae849558d6",
+        "id": "5dcd582ec4eff867ad0ef93e",
         "index": 9,
-        "guid": "769cbdd4-1368-486e-bad1-e31bce3b429f",
-        "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Lula Morales",
+        "guid": "8edce62d-a043-4ce5-966b-b9881a97cdd4",
+        "isManager": true,
+        "picture": "http://placehold.it/32x32",
+        "name": "Cotton Joyce",
+        "path": "BeckWoodward",
         "gender": "male",
-        "email": "burgessflynn@avit.com",
-        "phone": "+1 (886) 595-3349",
-        "address": "760 Nelson Street, Guilford, California, 179",
-        "about": "Adipisicing laboris cupidatat voluptate in incididunt aliquip commodo id ullamco irure sint. Voluptate deserunt dolore nostrud non dolore culpa non labore sint labore. Ipsum sint labore id sit magna adipisicing ullamco.\r\n",
+        "email": "beckwoodward@verton.com",
+        "phone": "+1 (861) 516-3767",
+        "address": "312 Woodpoint Road, Lopezo, Washington, 6453",
+        "about": "Est ex ex nisi ipsum duis ut ex incididunt cupidatat dolore amet pariatur consequat id. Consequat amet eiusmod et ea anim consectetur labore officia labore eiusmod sint velit ea. Excepteur et aute voluptate exercitation Lorem ullamco consequat labore duis ipsum reprehenderit. Qui minim cillum non nostrud deserunt. Ut veniam excepteur enim do voluptate.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 0
+                "level": 7
             },
             {
                 "skill": "devtool",
-                "level": 4
+                "level": 7
             },
             {
                 "skill": "frontend",
-                "level": 5
+                "level": 3
             },
             {
                 "skill": "objectoriented",
-                "level": 6
+                "level": 9
             },
             {
                 "skill": "algorithmic",
-                "level": 1
+                "level": 7
             },
             {
                 "skill": "pair",
-                "level": 0
+                "level": 8
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Lacy",
+            "repositories": 10
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             }
         ]
     },
     {
-        "id": "5dccc24b7317482a407801a1",
+        "id": "5dcd582e1ebc2c9c03464b08",
         "index": 10,
-        "guid": "60bd1118-54b1-4cf6-8bb6-cbd944fc9be4",
-        "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Richmond Pierce",
+        "guid": "11c2b961-90c3-49ec-94b4-96c11bd81ed4",
+        "isManager": false,
+        "picture": "http://placehold.it/32x32",
+        "name": "Estes Trujillo",
+        "path": "VirgieKinney",
         "gender": "female",
-        "email": "barbrafry@avit.com",
-        "phone": "+1 (849) 567-3079",
-        "address": "465 Taylor Street, Lutsen, Tennessee, 5910",
-        "about": "Mollit ipsum et nulla voluptate cupidatat est quis non incididunt. Voluptate aliqua laborum aliquip laboris tempor Lorem. Exercitation in veniam nostrud labore duis do sit ut officia cillum ullamco.\r\n",
+        "email": "virgiekinney@verton.com",
+        "phone": "+1 (965) 471-2584",
+        "address": "211 Carlton Avenue, Rivers, Maine, 3215",
+        "about": "Amet proident veniam aute sit est ea id excepteur adipisicing sint sit deserunt et. Irure esse eu magna commodo in anim cillum consectetur id in dolor laborum quis. Anim cupidatat qui amet magna pariatur enim ullamco voluptate consectetur sit cillum. Mollit incididunt minim duis labore ad commodo. Culpa fugiat eu magna consectetur labore quis consectetur ea ut aute. Non sit Lorem duis amet. Occaecat dolor non aute eiusmod dolore aliqua non ex adipisicing mollit.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 0
+                "level": 4
             },
             {
                 "skill": "devtool",
-                "level": 1
+                "level": 3
             },
             {
                 "skill": "frontend",
-                "level": 1
+                "level": 3
             },
             {
                 "skill": "objectoriented",
@@ -893,159 +774,145 @@ const employees = [
             },
             {
                 "skill": "algorithmic",
-                "level": 0
+                "level": 4
             },
             {
                 "skill": "pair",
                 "level": 9
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Jeanette",
+            "repositories": 8
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [
+            "http://placehold.it/32x32"
+        ],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    true,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             }
         ]
     },
     {
-        "id": "5dccc24b2b88573a8e9241f0",
+        "id": "5dcd582ea9682d0578189c2c",
         "index": 11,
-        "guid": "45c22f4d-1658-42a4-900f-d7b26becb048",
-        "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Wise Buckley",
+        "guid": "915b1495-9a8d-4df5-a60e-8c07839eab2a",
+        "isManager": true,
+        "picture": "http://placehold.it/32x32",
+        "name": "Nadine Brewer",
+        "path": "ByersBates",
         "gender": "male",
-        "email": "larsonwyatt@avit.com",
-        "phone": "+1 (978) 442-2434",
-        "address": "742 Schenck Court, Gambrills, Arizona, 9117",
-        "about": "Enim occaecat deserunt exercitation aliqua ex culpa cupidatat laborum consequat ad velit aliquip occaecat. Ullamco nulla mollit velit quis proident proident velit. Dolore dolor magna pariatur proident irure dolor irure minim elit officia cillum pariatur. Ea ad deserunt ullamco consectetur deserunt cupidatat occaecat sint. Sit magna ipsum excepteur mollit labore consectetur proident ullamco ut. Sit sint sunt amet ad laborum consequat irure id aliqua do laborum cillum quis enim. Irure nisi et non ea id velit in occaecat consequat mollit velit laboris.\r\n",
+        "email": "byersbates@verton.com",
+        "phone": "+1 (891) 452-3665",
+        "address": "550 Aurelia Court, Corinne, New Jersey, 3808",
+        "about": "Tempor adipisicing sit minim sunt duis. Irure consequat excepteur pariatur cupidatat aliquip sunt culpa aliquip ex anim est. Occaecat enim nisi incididunt eiusmod ipsum est eu dolor aliquip mollit ut.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 0
+                "level": 1
             },
             {
                 "skill": "devtool",
-                "level": 5
+                "level": 9
             },
             {
                 "skill": "frontend",
-                "level": 5
+                "level": 6
             },
             {
                 "skill": "objectoriented",
-                "level": 5
+                "level": 0
             },
             {
                 "skill": "algorithmic",
-                "level": 5
+                "level": 0
             },
             {
                 "skill": "pair",
-                "level": 6
+                "level": 8
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Cynthia",
+            "repositories": 5
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             }
         ]
     },
     {
-        "id": "5dccc24ba83e065314a2b227",
+        "id": "5dcd582e5c17d058196b5e03",
         "index": 12,
-        "guid": "d3c8da18-53c3-4ff2-b4e1-864796c4a917",
+        "guid": "3a2f3c19-6ec0-4a4b-84ca-d04f55392290",
         "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Bryan Riley",
+        "picture": "http://placehold.it/32x32",
+        "name": "Riley Crosby",
+        "path": "JacobsKing",
         "gender": "male",
-        "email": "orrmcneil@avit.com",
-        "phone": "+1 (874) 453-3431",
-        "address": "773 Rewe Street, Woodlake, Connecticut, 7903",
-        "about": "Eu culpa ad minim anim nostrud consequat minim consequat sunt ad esse. Exercitation qui reprehenderit fugiat fugiat aliquip aliqua commodo id nulla aute ullamco. Consequat est anim reprehenderit Lorem sunt fugiat exercitation enim qui eu anim. Ad ad duis incididunt irure labore magna irure duis ea voluptate cillum labore. Nisi elit aute incididunt id commodo occaecat ipsum nostrud minim ut enim proident exercitation.\r\n",
+        "email": "jacobsking@verton.com",
+        "phone": "+1 (950) 571-2751",
+        "address": "628 Ryder Avenue, Heil, Rhode Island, 258",
+        "about": "Esse excepteur enim ea ad ad consectetur. Sunt nostrud consectetur aliquip reprehenderit. Elit labore aute excepteur laborum et nostrud cupidatat voluptate magna. Sunt adipisicing ullamco ullamco culpa deserunt labore non mollit anim adipisicing sint consequat. Dolor amet quis id consequat aute voluptate. Do amet non officia officia consequat irure exercitation. Non ex eu anim proident qui nulla quis et veniam.\r\n",
         "skills": [
             {
                 "skill": "database",
@@ -1053,171 +920,152 @@ const employees = [
             },
             {
                 "skill": "devtool",
-                "level": 1
+                "level": 6
             },
             {
                 "skill": "frontend",
-                "level": 7
+                "level": 4
             },
             {
                 "skill": "objectoriented",
-                "level": 0
+                "level": 1
             },
             {
                 "skill": "algorithmic",
-                "level": 8
+                "level": 3
             },
             {
                 "skill": "pair",
-                "level": 2
+                "level": 1
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Grimes",
+            "repositories": 4
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b34ea40cf41b4790b",
+        "id": "5dcd582e73691bdbfc9816bf",
         "index": 13,
-        "guid": "a896d6b3-997f-4a64-891b-9c36bfe271d3",
-        "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Verna Cohen",
-        "gender": "female",
-        "email": "ritagraves@avit.com",
-        "phone": "+1 (814) 511-2538",
-        "address": "992 Paerdegat Avenue, Cedarville, Texas, 6687",
-        "about": "Tempor ad mollit id culpa ullamco fugiat dolor. Id esse eu adipisicing dolor in et ad aliquip nulla amet cupidatat ullamco esse commodo. Ullamco aliqua esse sunt eiusmod commodo in do ea mollit sunt. Mollit proident irure reprehenderit ex ea. Quis pariatur quis esse proident sint nulla commodo aliqua excepteur adipisicing commodo.\r\n",
+        "guid": "9506c86a-dd2c-4bb1-95cd-8f4e509e0002",
+        "isManager": true,
+        "picture": "http://placehold.it/32x32",
+        "name": "Meyer Diaz",
+        "path": "VazquezBlair",
+        "gender": "male",
+        "email": "vazquezblair@verton.com",
+        "phone": "+1 (938) 465-2606",
+        "address": "302 Coleridge Street, Escondida, South Carolina, 8374",
+        "about": "Amet id duis ad in proident. Fugiat dolore aute dolor eu irure nisi dolor sint culpa mollit reprehenderit in tempor. Eu fugiat ipsum non non elit ea fugiat cillum esse proident.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 10
+                "level": 1
             },
             {
                 "skill": "devtool",
-                "level": 2
+                "level": 10
             },
             {
                 "skill": "frontend",
-                "level": 6
+                "level": 1
             },
             {
                 "skill": "objectoriented",
-                "level": 5
+                "level": 9
             },
             {
                 "skill": "algorithmic",
-                "level": 4
+                "level": 5
             },
             {
                 "skill": "pair",
-                "level": 2
+                "level": 4
             }
+        ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Weeks",
+            "repositories": 8
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [
+            "http://placehold.it/32x32"
         ],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b2425a749c166f5e9",
+        "id": "5dcd582e61ef825b20f524a0",
         "index": 14,
-        "guid": "49bb5b10-7cba-4007-a66b-e4c1fa113d28",
-        "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Petty Moody",
-        "gender": "female",
-        "email": "miasnider@avit.com",
-        "phone": "+1 (849) 514-3223",
-        "address": "965 Brighton Court, Coventry, Iowa, 2263",
-        "about": "Enim magna eu esse dolore ullamco nulla fugiat irure ipsum. Mollit magna do sint ex. Est laboris tempor laborum ex dolor ipsum. Excepteur ea ea enim commodo sint. Velit dolor ullamco commodo dolore elit. Consectetur ullamco proident velit duis ex laboris anim amet occaecat velit.\r\n",
+        "guid": "ad967306-9c95-4b98-a771-388d89f7f0ab",
+        "isManager": false,
+        "picture": "http://placehold.it/32x32",
+        "name": "Clemons Stark",
+        "path": "HumphreyGeorge",
+        "gender": "male",
+        "email": "humphreygeorge@verton.com",
+        "phone": "+1 (811) 446-3209",
+        "address": "337 Brightwater Court, Valle, New York, 2411",
+        "about": "Deserunt consequat aliquip ut irure tempor. Laborum nulla sint laboris commodo consectetur dolor quis ea et amet est eu consequat. Amet excepteur quis eiusmod nostrud ea incididunt proident et sit.\r\n",
         "skills": [
             {
                 "skill": "database",
@@ -1229,93 +1077,79 @@ const employees = [
             },
             {
                 "skill": "frontend",
-                "level": 6
+                "level": 10
             },
             {
                 "skill": "objectoriented",
-                "level": 0
+                "level": 2
             },
             {
                 "skill": "algorithmic",
-                "level": 3
+                "level": 7
             },
             {
                 "skill": "pair",
-                "level": 8
+                "level": 6
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Earlene",
+            "repositories": 10
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24bfa0dc987ee7d84ab",
+        "id": "5dcd582eb15bcfe4f3206e42",
         "index": 15,
-        "guid": "77871e0d-b3a8-4a0f-bdbf-6d1df262636e",
-        "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Sharlene Haley",
-        "gender": "male",
-        "email": "rhodeskelly@avit.com",
-        "phone": "+1 (809) 496-3618",
-        "address": "948 Rodney Street, Chical, Delaware, 5381",
-        "about": "Ipsum quis nisi in duis commodo sunt consequat adipisicing. Sunt in irure amet do qui. Minim eiusmod adipisicing aliquip exercitation minim do nulla irure elit. Proident commodo ea enim deserunt proident voluptate labore magna irure nulla est magna dolor esse. Nostrud excepteur magna laboris duis labore consectetur pariatur et minim id.\r\n",
+        "guid": "6930c16d-c1e6-4692-a268-de2b230d5d9c",
+        "isManager": true,
+        "picture": "http://placehold.it/32x32",
+        "name": "Lottie Blake",
+        "path": "JamiRosa",
+        "gender": "female",
+        "email": "jamirosa@verton.com",
+        "phone": "+1 (926) 502-3423",
+        "address": "852 Wolf Place, Woodlake, North Carolina, 7442",
+        "about": "Id adipisicing officia culpa non officia id mollit eiusmod est exercitation. Cupidatat enim id cillum voluptate amet ex. In et tempor ad aliquip ullamco. Ipsum reprehenderit cillum cupidatat duis est consectetur. Cupidatat Lorem nulla excepteur deserunt cillum deserunt commodo sit ea eu aliqua est incididunt.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 0
+                "level": 1
             },
             {
                 "skill": "devtool",
-                "level": 7
+                "level": 3
             },
             {
                 "skill": "frontend",
-                "level": 8
+                "level": 7
             },
             {
                 "skill": "objectoriented",
@@ -1323,73 +1157,63 @@ const employees = [
             },
             {
                 "skill": "algorithmic",
-                "level": 8
+                "level": 2
             },
             {
                 "skill": "pair",
-                "level": 2
+                "level": 10
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Myra",
+            "repositories": 3
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b87340b0b93404cb0",
+        "id": "5dcd582ecf1f61b709ab4d86",
         "index": 16,
-        "guid": "bc6c2aaa-a7c2-4622-8bbe-99b2f4dfec04",
-        "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Rocha Vang",
+        "guid": "577787a2-4450-4ae5-9674-b3ac090d4d01",
+        "isManager": true,
+        "picture": "http://placehold.it/32x32",
+        "name": "Victoria Pickett",
+        "path": "ChurchPate",
         "gender": "male",
-        "email": "vancecervantes@avit.com",
-        "phone": "+1 (818) 487-3626",
-        "address": "782 Vanderbilt Avenue, Loretto, Vermont, 3575",
-        "about": "Culpa laborum minim ex labore reprehenderit magna cupidatat deserunt culpa. Nisi et qui reprehenderit mollit dolore velit sit sunt non pariatur nisi. Ullamco et ut est commodo elit nisi velit reprehenderit cillum proident cupidatat. In ut excepteur Lorem fugiat dolore ullamco pariatur id sit. Proident eiusmod eiusmod labore nisi laborum deserunt qui qui mollit deserunt ipsum nulla. Aliquip irure tempor ex nulla dolore dolore occaecat eiusmod veniam cillum.\r\n",
+        "email": "churchpate@verton.com",
+        "phone": "+1 (884) 515-2276",
+        "address": "955 Duffield Street, Sugartown, Kansas, 1838",
+        "about": "Veniam sit occaecat aliquip aliqua ullamco velit adipisicing officia labore tempor. Labore laborum velit ut veniam est. Laborum occaecat aliquip nisi ea anim consectetur fugiat occaecat exercitation mollit et in nulla. Et fugiat veniam ad anim labore anim. Ullamco dolore officia mollit nisi et sunt et laboris velit. Lorem nostrud veniam id commodo in deserunt amet.\r\n",
         "skills": [
             {
                 "skill": "database",
@@ -1397,15 +1221,15 @@ const employees = [
             },
             {
                 "skill": "devtool",
-                "level": 0
+                "level": 7
             },
             {
                 "skill": "frontend",
-                "level": 8
+                "level": 6
             },
             {
                 "skill": "objectoriented",
-                "level": 10
+                "level": 2
             },
             {
                 "skill": "algorithmic",
@@ -1413,339 +1237,288 @@ const employees = [
             },
             {
                 "skill": "pair",
-                "level": 3
+                "level": 5
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Vilma",
+            "repositories": 10
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b1fc5cc3439e8801c",
+        "id": "5dcd582ed1241068b0820fbc",
         "index": 17,
-        "guid": "23badb88-d54f-44f1-8823-79003c0392a9",
-        "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Mccarthy Page",
+        "guid": "dd5df2db-ed22-4687-bde7-44a5569621a5",
+        "isManager": true,
+        "picture": "http://placehold.it/32x32",
+        "name": "Tammi Rogers",
+        "path": "SolisHopper",
         "gender": "male",
-        "email": "guthriebailey@avit.com",
-        "phone": "+1 (842) 549-3875",
-        "address": "689 Willmohr Street, Muse, Puerto Rico, 3484",
-        "about": "Esse nisi voluptate do culpa est eiusmod ut Lorem non eu ipsum. Sit in quis fugiat mollit enim aliqua ut reprehenderit eu nostrud Lorem fugiat laboris. Irure irure consectetur ad nisi eiusmod eu ad deserunt adipisicing tempor. Ullamco eu quis officia nulla ad laboris excepteur labore fugiat. Adipisicing dolore reprehenderit laboris fugiat incididunt esse veniam. Laborum dolor sunt enim culpa excepteur adipisicing consectetur.\r\n",
+        "email": "solishopper@verton.com",
+        "phone": "+1 (951) 483-3602",
+        "address": "894 Tillary Street, Outlook, Delaware, 9206",
+        "about": "Aute velit aliqua laboris eiusmod minim veniam excepteur ea fugiat. Consectetur id elit ullamco ad occaecat culpa ea ea aliqua irure aliqua labore. Aliquip id aliquip incididunt incididunt sit officia irure pariatur cupidatat occaecat consequat minim tempor commodo. Consequat nisi aliqua officia qui dolor culpa incididunt.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 4
+                "level": 6
             },
             {
                 "skill": "devtool",
-                "level": 9
+                "level": 7
             },
             {
                 "skill": "frontend",
-                "level": 0
+                "level": 4
             },
             {
                 "skill": "objectoriented",
-                "level": 10
+                "level": 7
             },
             {
                 "skill": "algorithmic",
-                "level": 1
+                "level": 2
             },
             {
                 "skill": "pair",
-                "level": 5
+                "level": 1
             }
+        ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Wheeler",
+            "repositories": 6
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [
+            "http://placehold.it/32x32"
         ],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    true,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b46ed57823ef88ec4",
+        "id": "5dcd582ef4d74a5885a16c72",
         "index": 18,
-        "guid": "79860b3f-c5ea-4523-9b11-6087de7085a3",
-        "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Shepard Britt",
+        "guid": "00cea8fc-6ae8-4245-8c79-74f75e0be78c",
+        "isManager": false,
+        "picture": "http://placehold.it/32x32",
+        "name": "Amelia Williamson",
+        "path": "HallLindsey",
         "gender": "male",
-        "email": "mirandabranch@avit.com",
-        "phone": "+1 (862) 576-3836",
-        "address": "451 Kane Street, Cobbtown, Alabama, 2516",
-        "about": "Qui aute eu veniam nisi. Voluptate exercitation incididunt quis ut do tempor non eu id adipisicing cillum nostrud amet. Nulla voluptate proident culpa eu ad ut eu velit. Ad anim laboris officia et nostrud velit.\r\n",
+        "email": "halllindsey@verton.com",
+        "phone": "+1 (975) 406-3574",
+        "address": "232 Plymouth Street, Falconaire, Guam, 2333",
+        "about": "Duis aliqua aliqua pariatur nulla consectetur cillum eiusmod velit commodo sint. Tempor dolor cillum nostrud aliqua ea ex irure labore dolore adipisicing incididunt. Quis qui in commodo consectetur velit do qui aliqua consequat. Et ea eu quis deserunt minim aliquip amet esse est reprehenderit nulla exercitation labore. Laborum amet aliqua fugiat ut id pariatur sit sint. Nulla enim eu aliqua voluptate reprehenderit nisi labore aute excepteur quis voluptate duis labore amet.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 4
+                "level": 7
             },
             {
                 "skill": "devtool",
-                "level": 0
+                "level": 2
             },
             {
                 "skill": "frontend",
-                "level": 7
-            },
-            {
-                "skill": "objectoriented",
                 "level": 6
             },
             {
+                "skill": "objectoriented",
+                "level": 1
+            },
+            {
                 "skill": "algorithmic",
-                "level": 5
+                "level": 4
             },
             {
                 "skill": "pair",
-                "level": 7
+                "level": 9
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Mullen",
+            "repositories": 2
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": false
             }
         ]
     },
     {
-        "id": "5dccc24b1e57c114d9e68b2a",
+        "id": "5dcd582efcf90d390d56cab0",
         "index": 19,
-        "guid": "be91ad8d-ab65-4994-832f-29e6d07cba66",
-        "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Sadie Bryan",
+        "guid": "debeffd3-01dd-4108-9089-04eddb83d17f",
+        "isManager": true,
+        "picture": "http://placehold.it/32x32",
+        "name": "Rich Velasquez",
+        "path": "JayneKey",
         "gender": "female",
-        "email": "rosalynballard@avit.com",
-        "phone": "+1 (926) 544-2540",
-        "address": "614 Tilden Avenue, Oley, Hawaii, 4981",
-        "about": "Nostrud excepteur est nulla minim cillum consequat pariatur sit eiusmod eu ea commodo. Proident magna sit adipisicing quis reprehenderit quis do cillum occaecat irure sint elit. Elit ipsum sint ea excepteur consequat sunt cupidatat ut. Officia velit ea fugiat culpa aute amet enim quis aute consectetur pariatur cupidatat dolor. Ea veniam non proident id ipsum consectetur officia voluptate minim. Ut ut id labore eiusmod occaecat amet nisi est.\r\n",
+        "email": "jaynekey@verton.com",
+        "phone": "+1 (903) 418-2816",
+        "address": "868 Cedar Street, Mooresburg, Virgin Islands, 5448",
+        "about": "Laborum magna occaecat velit exercitation quis incididunt ea nisi incididunt. Ea reprehenderit aliquip eu exercitation non ea qui incididunt eiusmod fugiat sunt consequat. Sunt magna magna quis sit ea anim est do minim deserunt excepteur voluptate est. Cupidatat laboris commodo ullamco fugiat. Culpa occaecat magna non proident eu ullamco aute exercitation. Duis consequat qui ea in et anim exercitation fugiat officia qui consectetur.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 5
+                "level": 1
             },
             {
                 "skill": "devtool",
-                "level": 8
+                "level": 9
             },
             {
                 "skill": "frontend",
-                "level": 7
+                "level": 6
             },
             {
                 "skill": "objectoriented",
-                "level": 2
-            },
-            {
-                "skill": "algorithmic",
                 "level": 0
             },
             {
+                "skill": "algorithmic",
+                "level": 3
+            },
+            {
                 "skill": "pair",
-                "level": 7
+                "level": 6
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Witt",
+            "repositories": 9
+        },
+        "education": {
+            "bootCamp": [],
+            "universities": []
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    true,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": false
             }
         ]
     },
     {
-        "id": "5dccc24be2db0721e0b3d319",
+        "id": "5dcd582e8906bdfb834e2a27",
         "index": 20,
-        "guid": "e6320d40-4005-483f-832d-7da7fbe23099",
+        "guid": "d6f14cfe-c785-48fd-9b7d-c3663651ab4d",
         "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Webster Rodriquez",
+        "picture": "http://placehold.it/32x32",
+        "name": "Benson Holman",
+        "path": "OraBartlett",
         "gender": "female",
-        "email": "calliemitchell@avit.com",
-        "phone": "+1 (941) 581-3497",
-        "address": "680 Carroll Street, Biddle, Wyoming, 7010",
-        "about": "Velit sint nisi nostrud ipsum sit irure ad occaecat dolor quis ipsum dolore mollit excepteur. Exercitation fugiat tempor qui nisi in dolor minim ipsum sint ad culpa magna nostrud cupidatat. Do aliquip eiusmod elit non nostrud reprehenderit do elit nostrud eiusmod ut culpa. Occaecat est aute culpa incididunt.\r\n",
+        "email": "orabartlett@verton.com",
+        "phone": "+1 (824) 421-3947",
+        "address": "874 Marconi Place, Coyote, District Of Columbia, 3672",
+        "about": "Aliqua sit veniam quis dolor. Ut cupidatat irure exercitation commodo ex enim proident ipsum sit ullamco cupidatat sit. Id est sit velit duis cupidatat excepteur. Cupidatat do ut nisi esse non.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 10
+                "level": 9
             },
             {
                 "skill": "devtool",
-                "level": 3
+                "level": 5
             },
             {
                 "skill": "frontend",
-                "level": 2
+                "level": 9
             },
             {
                 "skill": "objectoriented",
@@ -1753,417 +1526,209 @@ const employees = [
             },
             {
                 "skill": "algorithmic",
-                "level": 7
+                "level": 6
             },
             {
                 "skill": "pair",
                 "level": 5
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Jody",
+            "repositories": 1
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [
+            "http://placehold.it/32x32"
+        ],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    true,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    true,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24bc746f9198bf97ab3",
+        "id": "5dcd582e89809ed0f9d49367",
         "index": 21,
-        "guid": "d1f95020-e538-4a09-bf97-7e0ebc5758f3",
-        "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Patrick Larson",
+        "guid": "a85becf5-5264-429a-8593-375b10448bf4",
+        "isManager": false,
+        "picture": "http://placehold.it/32x32",
+        "name": "Willis White",
+        "path": "SheilaWyatt",
         "gender": "female",
-        "email": "evawilliams@avit.com",
-        "phone": "+1 (946) 436-3661",
-        "address": "141 Independence Avenue, Lawrence, Virgin Islands, 2626",
-        "about": "Mollit ea ea mollit sint proident cupidatat minim adipisicing consequat. Occaecat occaecat laborum officia excepteur esse esse enim nisi. Ex id labore eu Lorem dolore consectetur exercitation officia reprehenderit do proident nulla nisi. Tempor officia culpa dolore ipsum excepteur.\r\n",
+        "email": "sheilawyatt@verton.com",
+        "phone": "+1 (891) 584-2779",
+        "address": "560 Kathleen Court, Aberdeen, Oklahoma, 8130",
+        "about": "Eiusmod duis eu anim pariatur esse ullamco voluptate velit commodo. Lorem veniam minim ad fugiat aliqua. Esse excepteur pariatur id amet nisi. Aliqua culpa deserunt Lorem proident veniam laboris cillum cillum nostrud. Elit eiusmod tempor velit consequat sit ut nisi sunt nisi. Quis ex nulla deserunt occaecat mollit reprehenderit mollit dolore. Et anim ipsum esse dolore consequat ut commodo.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 3
+                "level": 7
             },
             {
                 "skill": "devtool",
-                "level": 0
+                "level": 3
             },
             {
                 "skill": "frontend",
-                "level": 4
+                "level": 5
             },
             {
                 "skill": "objectoriented",
-                "level": 9
-            },
-            {
-                "skill": "algorithmic",
                 "level": 1
             },
             {
+                "skill": "algorithmic",
+                "level": 9
+            },
+            {
                 "skill": "pair",
-                "level": 8
+                "level": 6
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Sykes",
+            "repositories": 3
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b760d249166dc56b0",
+        "id": "5dcd582e718f317364706011",
         "index": 22,
-        "guid": "77b9abc3-b3a2-42b7-b245-d56a092d3717",
-        "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Connie Warner",
-        "gender": "male",
-        "email": "sheltondelacruz@avit.com",
-        "phone": "+1 (813) 489-3131",
-        "address": "379 Goodwin Place, Stockdale, Northern Mariana Islands, 168",
-        "about": "Et ipsum quis id quis ipsum non laborum ipsum nostrud. Nulla in laboris nostrud sunt proident veniam ad reprehenderit deserunt voluptate consectetur labore cillum sint. Laborum commodo fugiat ut amet in mollit sit id.\r\n",
+        "guid": "b5e4b7fc-34b0-46da-8bb4-e77b8af67501",
+        "isManager": true,
+        "picture": "http://placehold.it/32x32",
+        "name": "Johnson Espinoza",
+        "path": "BettyeSchultz",
+        "gender": "female",
+        "email": "bettyeschultz@verton.com",
+        "phone": "+1 (982) 477-3371",
+        "address": "772 Herkimer Place, Hickory, Georgia, 6553",
+        "about": "Qui exercitation in incididunt esse consequat minim proident. Et consectetur culpa ut est in. Nostrud duis fugiat laborum ullamco dolore ipsum nostrud dolore do tempor laborum eu voluptate aliqua. Enim quis nulla occaecat et non nulla.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 7
+                "level": 10
             },
             {
                 "skill": "devtool",
-                "level": 8
+                "level": 0
             },
             {
                 "skill": "frontend",
-                "level": 8
-            },
-            {
-                "skill": "objectoriented",
-                "level": 0
-            },
-            {
-                "skill": "algorithmic",
-                "level": 9
-            },
-            {
-                "skill": "pair",
-                "level": 0
-            }
-        ],
-        "badges": [
-            {
-                "initiative": "drove",
-                "badges": [
-                    false,
-                    true,
-                    true,
-                    true,
-                    false,
-                    true
-                ]
-            },
-            {
-                "initiative": "quantum",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
-            },
-            {
-                "initiative": "uber",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    false
-                ]
-            },
-            {
-                "initiative": "virtualintake",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
-            }
-        ]
-    },
-    {
-        "id": "5dccc24b2e092e557866a5b7",
-        "index": 23,
-        "guid": "980d8bde-01d2-45fd-a929-dcbfa437b64f",
-        "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Schmidt Morgan",
-        "gender": "male",
-        "email": "butlerortiz@avit.com",
-        "phone": "+1 (993) 597-3796",
-        "address": "585 Whitty Lane, Springhill, Illinois, 5057",
-        "about": "Nisi cillum ea sit laborum tempor nisi enim commodo amet. Ut commodo eiusmod magna esse. Minim mollit duis laboris nisi consequat ut do sunt. Eu veniam minim sint eu est laborum.\r\n",
-        "skills": [
-            {
-                "skill": "database",
                 "level": 5
             },
             {
-                "skill": "devtool",
-                "level": 9
-            },
-            {
-                "skill": "frontend",
-                "level": 7
-            },
-            {
                 "skill": "objectoriented",
-                "level": 2
-            },
-            {
-                "skill": "algorithmic",
-                "level": 6
-            },
-            {
-                "skill": "pair",
-                "level": 7
-            }
-        ],
-        "badges": [
-            {
-                "initiative": "drove",
-                "badges": [
-                    false,
-                    false,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
-            },
-            {
-                "initiative": "quantum",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
-            },
-            {
-                "initiative": "uber",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    false,
-                    true,
-                    true
-                ]
-            },
-            {
-                "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true
-                ]
-            }
-        ]
-    },
-    {
-        "id": "5dccc24b93bb5a842a988a30",
-        "index": 24,
-        "guid": "faf0e34b-3700-4971-82ee-d50a9881b427",
-        "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Robles Parks",
-        "gender": "female",
-        "email": "candiceortega@avit.com",
-        "phone": "+1 (874) 536-3354",
-        "address": "399 Blake Court, Talpa, New Hampshire, 2724",
-        "about": "Deserunt nisi occaecat ut labore dolore. Irure aliquip elit sunt commodo mollit culpa mollit Lorem Lorem enim adipisicing ipsum. Velit quis adipisicing duis fugiat reprehenderit nulla sunt do magna incididunt dolore nulla consequat et. Nostrud amet velit veniam nisi ullamco cillum consequat enim culpa dolor voluptate. Cillum do fugiat sint sit ut consectetur cupidatat dolore ex ea aliquip deserunt do magna.\r\n",
-        "skills": [
-            {
-                "skill": "database",
                 "level": 3
             },
             {
-                "skill": "devtool",
-                "level": 10
-            },
-            {
-                "skill": "frontend",
-                "level": 1
-            },
-            {
-                "skill": "objectoriented",
-                "level": 0
-            },
-            {
                 "skill": "algorithmic",
-                "level": 10
+                "level": 9
             },
             {
                 "skill": "pair",
-                "level": 6
+                "level": 3
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Pruitt",
+            "repositories": 6
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": []
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    true,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    true,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24b4c49f65dbaefd3fb",
-        "index": 25,
-        "guid": "dd77808e-de82-44d1-904d-1b97b5bb4a94",
-        "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Cassie Mayo",
-        "gender": "male",
-        "email": "trujillowalker@avit.com",
-        "phone": "+1 (980) 581-3727",
-        "address": "165 Wogan Terrace, Sunbury, North Carolina, 1548",
-        "about": "Eu do culpa ad amet labore. Aute ex pariatur nostrud in Lorem laborum excepteur aliquip irure proident. Est minim deserunt excepteur culpa. Quis et ea velit officia esse velit sunt labore in pariatur. Cillum excepteur aliqua dolore quis elit nulla incididunt labore amet do. Reprehenderit officia dolor minim velit. Elit Lorem excepteur officia aliquip nisi irure eu laboris ex mollit.\r\n",
+        "id": "5dcd582e6a4fa4ac4e32d84e",
+        "index": 23,
+        "guid": "cb2d10e3-c6fe-4b5a-b10a-0150fcb697de",
+        "isManager": false,
+        "picture": "http://placehold.it/32x32",
+        "name": "Hopper Quinn",
+        "path": "JanisWeiss",
+        "gender": "female",
+        "email": "janisweiss@verton.com",
+        "phone": "+1 (899) 563-2119",
+        "address": "640 Gaylord Drive, Walker, Missouri, 1349",
+        "about": "Irure dolor adipisicing incididunt ad dolore culpa. Lorem nisi magna laborum occaecat commodo amet aliquip sunt in minim id excepteur. Deserunt ipsum magna et ullamco nulla. Mollit aliquip voluptate mollit occaecat consectetur cupidatat enim non aute ullamco. Mollit reprehenderit enim ullamco id consequat culpa eiusmod ea minim cillum.\r\n",
         "skills": [
             {
                 "skill": "database",
@@ -2171,331 +1736,142 @@ const employees = [
             },
             {
                 "skill": "devtool",
-                "level": 9
-            },
-            {
-                "skill": "frontend",
-                "level": 1
-            },
-            {
-                "skill": "objectoriented",
                 "level": 0
             },
             {
-                "skill": "algorithmic",
-                "level": 6
+                "skill": "frontend",
+                "level": 8
             },
             {
-                "skill": "pair",
+                "skill": "objectoriented",
                 "level": 2
-            }
-        ],
-        "badges": [
-            {
-                "initiative": "drove",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    false,
-                    false
-                ]
             },
             {
-                "initiative": "quantum",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    true,
-                    true,
-                    false
-                ]
-            },
-            {
-                "initiative": "uber",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    false,
-                    false
-                ]
-            },
-            {
-                "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    true,
-                    true
-                ]
-            }
-        ]
-    },
-    {
-        "id": "5dccc24b2d184cfe7a8eeade",
-        "index": 26,
-        "guid": "b56ea1c6-73df-40e3-9b0e-0ecc2719be08",
-        "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Wiggins Hayden",
-        "gender": "male",
-        "email": "wintersemerson@avit.com",
-        "phone": "+1 (925) 495-3367",
-        "address": "576 Bergen Place, Robbins, Oklahoma, 5173",
-        "about": "Exercitation ad eu nisi laboris ad reprehenderit nulla cillum exercitation. Ipsum commodo eu aute Lorem cupidatat nisi consectetur do commodo Lorem amet exercitation. Aute minim consequat est enim veniam occaecat voluptate. Proident id voluptate sit ex aliquip exercitation culpa id et sint ex sit. Cupidatat magna excepteur velit magna ea reprehenderit adipisicing.\r\n",
-        "skills": [
-            {
-                "skill": "database",
+                "skill": "algorithmic",
                 "level": 4
             },
             {
-                "skill": "devtool",
-                "level": 8
-            },
-            {
-                "skill": "frontend",
-                "level": 7
-            },
-            {
-                "skill": "objectoriented",
-                "level": 3
-            },
-            {
-                "skill": "algorithmic",
-                "level": 1
-            },
-            {
                 "skill": "pair",
-                "level": 5
+                "level": 2
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Brennan",
+            "repositories": 2
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    false,
-                    true,
-                    false,
-                    true,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    true,
-                    false,
-                    true,
-                    true,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": true
             }
         ]
     },
     {
-        "id": "5dccc24bd9b682bceed1eb33",
-        "index": 27,
-        "guid": "4455078c-3ea8-482d-b21b-9975424aa5eb",
-        "isManager": true,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Downs Schultz",
-        "gender": "female",
-        "email": "ninaayala@avit.com",
-        "phone": "+1 (997) 467-2425",
-        "address": "539 Chester Avenue, Wanship, Michigan, 4859",
-        "about": "Reprehenderit magna dolor quis qui excepteur elit adipisicing ullamco occaecat ipsum. Exercitation culpa nostrud ut non veniam et enim ad laborum officia minim voluptate. Cupidatat aliquip mollit ipsum amet eiusmod. Et cupidatat incididunt commodo irure Lorem. Nulla voluptate esse magna commodo culpa reprehenderit. Veniam adipisicing fugiat tempor commodo. Adipisicing esse non dolore eu sit est Lorem.\r\n",
-        "skills": [
-            {
-                "skill": "database",
-                "level": 8
-            },
-            {
-                "skill": "devtool",
-                "level": 6
-            },
-            {
-                "skill": "frontend",
-                "level": 9
-            },
-            {
-                "skill": "objectoriented",
-                "level": 5
-            },
-            {
-                "skill": "algorithmic",
-                "level": 0
-            },
-            {
-                "skill": "pair",
-                "level": 6
-            }
-        ],
-        "badges": [
-            {
-                "initiative": "drove",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    false,
-                    false
-                ]
-            },
-            {
-                "initiative": "quantum",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    true,
-                    false,
-                    false
-                ]
-            },
-            {
-                "initiative": "uber",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    false,
-                    false,
-                    true
-                ]
-            },
-            {
-                "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    true,
-                    false,
-                    true,
-                    true,
-                    false
-                ]
-            }
-        ]
-    },
-    {
-        "id": "5dccc24bce85923e47bbf785",
-        "index": 28,
-        "guid": "d6731824-ef7f-431b-b82a-b91bb3db797b",
+        "id": "5dcd582e670f7b567820b821",
+        "index": 24,
+        "guid": "96f6722f-c120-46d9-9e56-d3e8d3c8d275",
         "isManager": false,
-        "githubUrl": "http://github.com",
-        "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/no-img.png?alt=media&token=10d7622e-2ea6-46ca-be40-e9cd0b027fc2",
-        "name": "Burnett Fuentes",
+        "picture": "http://placehold.it/32x32",
+        "name": "Jewel Sherman",
+        "path": "CarsonElliott",
         "gender": "male",
-        "email": "reesehurley@avit.com",
-        "phone": "+1 (969) 523-3922",
-        "address": "669 Bryant Street, Idledale, Palau, 425",
-        "about": "Nostrud do cupidatat irure ad. Reprehenderit laborum excepteur nostrud voluptate. Culpa nisi quis anim pariatur veniam reprehenderit excepteur occaecat sit sit excepteur officia cupidatat culpa.\r\n",
+        "email": "carsonelliott@verton.com",
+        "phone": "+1 (934) 491-2366",
+        "address": "151 Ainslie Street, Sehili, Arizona, 3582",
+        "about": "Consequat ipsum cupidatat consequat cupidatat nostrud. Deserunt aute enim excepteur aliqua eu enim adipisicing labore enim non exercitation mollit. Mollit reprehenderit consequat elit ad.\r\n",
         "skills": [
             {
                 "skill": "database",
-                "level": 1
+                "level": 2
             },
             {
                 "skill": "devtool",
-                "level": 5
-            },
-            {
-                "skill": "frontend",
-                "level": 9
-            },
-            {
-                "skill": "objectoriented",
                 "level": 8
             },
             {
+                "skill": "frontend",
+                "level": 1
+            },
+            {
+                "skill": "objectoriented",
+                "level": 6
+            },
+            {
                 "skill": "algorithmic",
-                "level": 7
+                "level": 8
             },
             {
                 "skill": "pair",
-                "level": 5
+                "level": 6
             }
         ],
+        "github": {
+            "githubUrl": "http://github.com",
+            "githubHandle": "Whitley",
+            "repositories": 1
+        },
+        "education": {
+            "bootCamp": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ],
+            "universities": [
+                "http://placehold.it/32x32",
+                "http://placehold.it/32x32"
+            ]
+        },
+        "resume": [],
         "badges": [
             {
                 "initiative": "drove",
-                "badges": [
-                    true,
-                    true,
-                    true,
-                    true,
-                    true,
-                    true
-                ]
+                "fullFilledBadge": true
             },
             {
                 "initiative": "quantum",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    true,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "uber",
-                "badges": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                ]
+                "fullFilledBadge": false
             },
             {
                 "initiative": "virtualintake",
-                "badges": [
-                    true,
-                    false,
-                    false,
-                    false,
-                    false,
-                    true
-                ]
+                "fullFilledBadge": false
             }
         ]
     }
 ];
+
 
 const currentUser = 0;
 export const signedInEmployee = employees[currentUser];
