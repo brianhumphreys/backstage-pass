@@ -2,8 +2,8 @@ import React, {Fragment} from "react";
 import {Route, Switch} from "react-router-dom";
 import "./App.css";
 import {getSignedInUser} from './store/storeFunctions';
-import ManagerProfile from "./containers/ManagerProfile";
 import EmployeeProfile from "./containers/EmployeeProfile";
+import LoginPage from "./containers/LoginPage/LoginPage";
 
 import AdminPage from "./containers/AdminPage";
 import NavigationBar from "./containers/Navigation";
@@ -16,14 +16,12 @@ import {getEmployees} from "./store/storeFunctions";
 const App = () => {
   getEmployees();
   const userData = getSignedInUser();
-  const Profile = userData.isManager
-    ? () => ManagerProfile()
-    : () => EmployeeProfile();
   return (
     <Fragment>
       <NavigationBar gravatar={userData.picture} />
       <Switch>
-        <Route exact path="/accounts/:id" component={Profile} />
+        <Route exact path="/" component={LoginPage} />
+        <Route exact path="/accounts/:id" component={EmployeeProfile} />
         <Route exact path="/accounts" component={EmployeeSearchPage}/>
         <Route exact path="/admin" component={AdminPage} />
         <Route exact path="/skillflex" component={SkillsWorkoutPage}/>

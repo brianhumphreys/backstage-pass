@@ -2,6 +2,17 @@ import employees, { signedInEmployee } from "../mockData/employees";
 import initiatives from "../mockData/initiatives";
 import axios from "axios";
 
+const signInUser = (e) => {
+  e.preventDefault()
+  const users = employees.filter((employee) => employee.path === e.target.username.value)
+  if (users[0]) {
+    setSignedInUser(users[0])
+    window.location.replace('/accounts/' + users[0].path)
+  } else {
+    alert('Incorrect Credentials')
+  }
+}
+
 const cache = (key, setter, data) => {
   const stringData = localStorage.getItem(key);
   if (stringData) {
@@ -45,12 +56,13 @@ const getNotifications = () => {
 };
 
 const setGitHubInfo = (githubData, employee) => {
-  const employees = getEmployees();
-  const index = employees.findIndex(user => user.name === employee.name);
-  employees[index].github.repositories = githubData.repositories;
-  employees[index].github.githubUrl = githubData.githubUrl;
-  employees[index].github.githubHandle = githubData.githubHandle;
-  setEmployees(employees);
+    const employees = getEmployees();
+    // console.log(employees);
+    const index = employees.findIndex(user => user.name === employee.name);
+    employees[index].github.repositories = githubData.repositories;
+    employees[index].github.githubUrl = githubData.githubUrl;
+    employees[index].github.githubHandle = githubData.githubHandle;
+    setEmployees(employees);
 };
 
 const getGitHubInfo = (employee, gitHubUserName) => {
@@ -111,18 +123,17 @@ const setUniversities = employee => {
 };
 
 export {
-  setSignedInUser,
-  getSignedInUser,
-  setEmployees,
-  getEmployees,
-  setInitiatives,
-  getInitiatives,
-  setNotifications,
-  getNotifications,
-  setGitHubInfo,
-  getGitHubInfo,
-  getBootcamps,
-  setBootcamps,
-  setUniversities,
-  getUniversities
+    setSignedInUser,
+    getSignedInUser,
+    setEmployees,
+    getEmployees,
+    setInitiatives,
+    getInitiatives,
+    setNotifications,
+    getNotifications,
+    setGitHubInfo,
+    getGitHubInfo,
+    signInUser,
+    setUniversities,
+    getUniversities
 };
