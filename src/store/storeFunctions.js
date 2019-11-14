@@ -46,8 +46,15 @@ const getNotifications = () => {
 
 const setGitHubInfo = (githubData, employee) => {
     const employees = getEmployees();
-    const index = employees.findIndex(user => user === employee);
-    employees[index].github = githubData;
+    // console.log(employees);
+    console.log('here');
+    const index = employees.findIndex(user => user.name === employee.name);
+    console.log('stupid', employees);
+    console.log('indexed', employees[index]);
+    employees[index].github.repositories = githubData.repositories;
+    employees[index].github.githubUrl = githubData.githubUrl;
+    employees[index].github.githubHandle = githubData.githubHandle;
+    console.log('after stupid', employees[index]);
     setEmployees(employees);
 };
 

@@ -1,24 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-const GitHubProfile = ({gitHubData}) => {
+const GitHubProfile = ({ gitHubData }) => {
+  console.log("we made it", gitHubData);
   return (
-    <div className="icon fontawesome-heart-empty scnd-font-color">
-      <div>
-        UserName: {gitHubData.login}
+    <a href={"https://github.com/" + gitHubData.githubHandle}>
+      <div className="header-menu-tab">
+        <div>
+          <span className="scnd-font-color"></span>
+          {gitHubData.githubHandle}
+        </div>
+        <div>
+          <span className="icon fontawesome-star-empty scnd-font-color"></span>
+          {gitHubData.repositories} Repositories
+        </div>
       </div>
-      <div>
-        Name: {gitHubData.name}
-      </div>
-      <div>
-        Repositories: {gitHubData.public_repos}
-      </div>
-      <div>
-        <a className="" href={'https://github.com/' + gitHubData.login}
-          target="_blank">
-          View Profile
-        </a>
-      </div>
-    </div>
+
+      {/*<div className="user-name">{gitHubData.githubHandle}</div>*/}
+      {/*  <span className="icon fontawesome-star-empty scnd-font-color"></span>*/}
+      {/*<div className="user-name">Repositories: {gitHubData.repositories}</div>*/}
+      {/*<div></div>*/}
+    </a>
   );
-}
+};
 export default GitHubProfile;
