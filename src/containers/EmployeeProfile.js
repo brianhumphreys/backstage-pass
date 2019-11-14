@@ -54,18 +54,31 @@ const EmployeeProfile = () => {
     );
   };
 
-  console.log(getScore(employee));
+    const hasSkills = employee.skills.map(skill => skill.level).reduce((a, b) => a + b, 0) !== 0
 
-  // const hasSkills = employee.skills.map(skill => skill.level).reduce((a, b) => a + b, 0) !== 0
-  const hasSkills = false;
-
-  return (
-    <body>
-      <div className="main-container">
-        <div className="left-container container">
-          <MenuBlock />
-          <DonutChartBlock score={userScore} />
-          <LoadingBlock />
+    return (
+        <body>
+        <div className="main-container">
+            <div className="left-container container">
+                <MenuBlock />
+                <DonutChartBlock score={userScore} />
+                <MediaBlock/>
+            </div>
+            <div className="middle-container container">
+                <ProfileBlock account={employee}/>
+                <GitHubBlock account={employee}/>
+                <EducationBlock account={employee}/>
+            </div>
+            <div className="right-container container">
+                {
+                    hasSkills ?
+                        <RadarChartBlock id="employeeSkills" account={employee} comparing={false}/>
+                        :
+                        <SkillQuestionnaireBlock />
+                }
+                <EmailBlock/>
+                <LoadingBlock/>
+            </div>
         </div>
         <div className="middle-container container">
           <ProfileBlock account={employee} />
@@ -82,7 +95,6 @@ const EmployeeProfile = () => {
 
           <EmailBlock />
         </div>
-      </div>
     </body>
   );
 };
