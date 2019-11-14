@@ -18,7 +18,7 @@ const App = () => {
   const userData = getSignedInUser();
   return (
     <Fragment>
-      <NavigationBar gravatar={userData.picture} />
+      {window.location.pathname === '/' ? null : <NavigationBar gravatar={userData.picture} />}
       <Switch>
         <Route exact path="/" component={LoginPage} />
         <Route exact path="/accounts/:id" component={EmployeeProfile} />
