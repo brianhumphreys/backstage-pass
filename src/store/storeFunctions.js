@@ -53,7 +53,7 @@ const setGitHubInfo = (githubData, employee) => {
 
 const getGitHubInfo = (employee, gitHubUserName) => {
     if(employee.github.githubHandle !== null) {
-        return employee.github;
+        return new Promise(() => employee.github);
     } else {
         return axios
             .get(`https://api.github.com/users/${gitHubUserName}`)

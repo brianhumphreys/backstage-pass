@@ -4,7 +4,8 @@ import GitHubProfile from "./GitHubProfile";
 import { getGitHubInfo } from "../store/storeFunctions";
 
 const GitHubBlock = ({ account }) => {
-    const [gitHubData, updateGitHubData] = useState();
+    console.log(account);
+    const [gitHubData, updateGitHubData] = useState(account.github);
     const [gitHubUserName, setGitHubUserName] = useState(
         account.github.githubHandle
     );
@@ -29,7 +30,7 @@ const GitHubBlock = ({ account }) => {
                 <span className="icon zocial-GitHubBlock"></span>GitHub
             </h2>
             <div className="tweet first">
-                {gitHubUserName && gitHubData.login ? (
+                {gitHubUserName && gitHubData.githubHandle ? (
                     <GitHubProfile gitHubData={gitHubData} />
                 ) : (
                     <div className="input-container">

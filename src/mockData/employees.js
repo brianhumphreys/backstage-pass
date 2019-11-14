@@ -5,7 +5,7 @@ const employees = [
         "id": "5dcd582e81a0f55861118f91",
         "index": 0,
         "guid": "9ed5514b-2bc9-4efa-b3dd-166d58113fb0",
-        "isManager": true,
+        "isManager": false,
         "picture": "https://firebasestorage.googleapis.com/v0/b/apple-a-day-4765c.appspot.com/o/34462505913.jpg?alt=media&token=f18c31be-3039-43ea-b1d3-a9014c6ee71d",
         "name": "Brian Humphreys",
         "path": "BrianHumphreys",

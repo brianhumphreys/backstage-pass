@@ -11,8 +11,10 @@ import InitiativePage from "./containers/InitiativePage";
 import SkillsWorkoutPage from "./containers/SkillsWorkoutPage";
 import InitiativeListPage from "./containers/InititiveListPage";
 import EmployeeSearchPage from "./containers/EmployeeSearchPage";
+import {getEmployees} from "./store/storeFunctions";
 
 const App = () => {
+  getEmployees();
   const userData = getSignedInUser();
   const Profile = userData.isManager
     ? () => ManagerProfile()
