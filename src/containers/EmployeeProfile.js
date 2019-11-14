@@ -5,6 +5,7 @@ import DonutChartBlock from '../components/DonutChartBlock';
 import ProfileBlock from '../components/ProfileBlock';
 import GitHubBlock from '../components/GitHubBlock';
 import EmailBlock from '../components/EmailBlock';
+import SkillQuestionnaireBlock from '../components/SkillQuestionnaireBlock'
 import LoadingBlock from '../components/LoadingBlock';
 import RadarChartBlock from '../components/RadarChartBlock/RadarChartBlock';
 import { getEmployees} from "../store/storeFunctions";
@@ -30,6 +31,10 @@ const EmployeeProfile = () => {
 
     console.log(getScore(employee));
 
+    // const hasSkills = employee.skills.map(skill => skill.level).reduce((a, b) => a + b, 0) !== 0
+    const hasSkills = false
+
+
     return (
         <body>
         <div className="main-container">
@@ -45,7 +50,12 @@ const EmployeeProfile = () => {
                 <MediaBlock/>
             </div>
             <div className="right-container container">
-                <RadarChartBlock id="employeeSkills" account={employee} comparing={false}/>
+                {
+                    hasSkills ?
+                        <RadarChartBlock id="employeeSkills" account={employee} comparing={false}/>
+                        :
+                        <SkillQuestionnaireBlock />
+                }
                 <EmailBlock/>
             </div>
         </div>
