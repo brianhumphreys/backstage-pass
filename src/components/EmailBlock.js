@@ -15,7 +15,7 @@ const EmailBlock = () => {
                     <span className="fontawesome-envelope scnd-font-color"></span>
                 </div>
             </div>
-            <a className="subscribe button" href="#21" onClick={openEmail}>
+            <a className="subscribe button" onClick={openEmail}>
                 EMAIL
             </a>
         </div>

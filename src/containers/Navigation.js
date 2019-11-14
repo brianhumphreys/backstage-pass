@@ -55,7 +55,7 @@ const NavigationBar = ({ gravatar }) => {
       <div className="profile-menu">
         <p>
           Me{" "}
-          <a href="#26">
+          <a>
             <span className="entypo-down-open scnd-font-color"></span>
           </a>
         </p>

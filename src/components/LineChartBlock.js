@@ -33,17 +33,17 @@ const LineChartBlock = () => {
             </div>
             <ul className="time-lenght horizontal-list">
                 <li>
-                    <a className="time-lenght-btn" href="#14">
+                    <a className="time-lenght-btn">
                         Week
                     </a>
                 </li>
                 <li>
-                    <a className="time-lenght-btn" href="#15">
+                    <a className="time-lenght-btn">
                         Month
                     </a>
                 </li>
                 <li>
-                    <a className="time-lenght-btn" href="#16">
+                    <a className="time-lenght-btn">
                         Year
                     </a>
                 </li>
