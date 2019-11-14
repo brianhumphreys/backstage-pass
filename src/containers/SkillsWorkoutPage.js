@@ -14,18 +14,16 @@ const SkillsWorkoutPage = ({userData}) => {
         <body>
         <div className="main-container">
             <div className="left-container container">
-                <CourseBlock/>
-                <CourseBlock/>
-                <CourseBlock/>
+                <CourseBlock index={0} skill="Upgrade Database Skills"/>
+                <CourseBlock index={3} skill="Upgrade OOP Skills"/>
             </div>
             <div className="middle-container container">
-                <CourseBlock/>
-                <CourseBlock/>
-                <CourseBlock/>
+                <CourseBlock index={1} skill="Upgrade Devtool Skills"/>
+                <CourseBlock index={4} skill="Upgrade Algorithmic Skills"/>
             </div>
             <div className="right-container container">
-                <CourseBlock/>
-                <CourseBlock/>
+                <CourseBlock index={2} skill="Upgrade Frontend Skills"/>
+                <CourseBlock index={5} skill="Upgrade Pairing Skills"/>
             </div>
         </div>
         </body>
