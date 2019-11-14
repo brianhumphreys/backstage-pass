@@ -12,13 +12,24 @@ import InitiativeListPage from "./containers/InititiveListPage";
 
 import AdminPage from "./containers/AdminPage";
 const getUser = (userId) => {
-  // userList.filter((user) => user.id === userId)[0]
-  return userList[0]
+  const user = userList.filter((user) => user.id === userId)[0]
+    localStorage.setItem('loggedInUser', JSON.stringify(user));
+    return user
 };
 
 const App = () => {
-  // const userId = parseInt(window.location.pathname.split('/')[window.location.pathname.split('/').length - 1], 10);
-  const userData = getUser(0)
+  let loggedInUserString = localStorage.getItem('loggedInUser');
+  let userData;
+
+  const userId = parseInt(window.location.pathname.split('/')[window.location.pathname.split('/').length - 1], 10);
+  const noUserId =Object.is(NaN, userId)
+
+  if (noUserId){
+      userData = loggedInUserString ? JSON.parse(loggedInUserString) :  getUser(1)
+  } else {
+      userData = getUser(userId)
+  }
+
   const Profile = employeeProfilePayload.employee.manager
   ? () => ManagerProfile({userData: userData})
   : () => EmployeeProfile({userData: userData});
@@ -26,7 +37,7 @@ const App = () => {
     <Fragment>
       <NavigationBar gravatar={userData.gravatar}/>
       <Switch>
-        <Route exact path="/" component={Profile} />
+        <Route path="/:id?" component={Profile} />
         <Route path="/admin" component={AdminPage} />
         <Route exact path="/initiatives" component={() => InitiativeListPage(initiatives)} />
         <Route exact path="/initiatives/:initiative" component={InitiativePage} />
