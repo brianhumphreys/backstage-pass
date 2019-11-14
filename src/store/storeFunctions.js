@@ -1,5 +1,6 @@
 import employees, { signedInEmployee } from "../mockData/employees";
 import initiatives from "../mockData/initiatives";
+import axios from 'axios';
 
 const cache = (key, setter, data) => {
     const stringData = localStorage.getItem(key);
@@ -43,6 +44,22 @@ const getNotifications = () => {
     return cache("notifications", setNotifications, []);
 };
 
+const setGitHubInfo = (githubData, employee) => {
+    const employees = getEmployees();
+    const index = employees.findIndex(user => user === employee);
+    employees[index].github = githubData;
+    setEmployees(employees);
+};
+
+const getGitHubInfo = (employee, gitHubUserName) => {
+    if(employee.github.githubHandle !== null) {
+        return employee.github;
+    } else {
+        return axios
+            .get(`https://api.github.com/users/${gitHubUserName}`)
+    }
+};
+
 export {
     setSignedInUser,
     getSignedInUser,
@@ -52,4 +69,6 @@ export {
     getInitiatives,
     setNotifications,
     getNotifications,
+    setGitHubInfo,
+    getGitHubInfo
 };
