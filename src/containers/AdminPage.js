@@ -13,9 +13,9 @@ const compare = (employee1, employee2) => {
      if (score1 === score2){
          return 0
      }else if (score1 > score2){
-         return -1
-     } else {
          return 1
+     } else {
+         return -1
      }
 }
 
@@ -35,21 +35,21 @@ const AdminPage = () => {
                   </tr>
                   </thead>
                   <tbody>
-                  {getEmployees().map(e => {
+                  {getEmployees().map((e, i) => {
                       return <tr className="admin-table-row">
-                          <td>
+                          <td align="center">
                               {e.name}
                           </td>
-                          <td>
+                          <td align="center">
                               {e.email}
                           </td>
-                          <td>
+                          <td align="center">
                               {e.about}
                           </td>
-                          <td>
-                              <strong>{getScore(e)}</strong>
+                          <td align="center">
+                              <strong>{i+1}</strong>
                           </td>
-                          <td>
+                          <td align="center">
                               <button className="button" onClick={() => window.open(`mailto:test@${e.email}`)}>I'm Interested!</button>
                           </td>
                       </tr>
