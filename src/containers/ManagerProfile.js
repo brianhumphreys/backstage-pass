@@ -10,13 +10,7 @@ import EmailBlock from '../components/EmailBlock';
 import LoadingBlock from '../components/LoadingBlock';
 import RadarChartBlock from '../components/RadarChartBlock/RadarChartBlock';
 
-
-const ManagerProfile = () => {
-
-
-    // console.log(employeeProfilePayload);
-
-
+const ManagerProfile = ({userData}) => {
     return (
         <body>
         <div className="main-container">

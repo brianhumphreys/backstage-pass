@@ -4,31 +4,61 @@ import "./App.css";
 import EmployeeProfile from "./containers/EmployeeProfile";
 import ManagerProfile from "./containers/ManagerProfile";
 import NavigationBar from "./containers/Navigation";
-import employeeProfilePayload from "./mockData/employeeProfile";
+import employees from "./mockData/employees";
+import userList from "./mockData/userList";
+import initiatives from "./mockData/initiatives";
 import InitiativePage from "./containers/InitiativePage";
 import InitiativeListPage from "./containers/InititiveListPage";
-import LoginPage from './containers/LoginPage/LoginPage';
 
 import AdminPage from "./containers/AdminPage";
-
-const Fake = () => {
-    return (<div></div>)
+const getUser = userId => {
+  const user = employees[employees.findIndex(user => user.index === userId)];
+  console.log(user);
+  localStorage.setItem("loggedInUser", JSON.stringify(user));
+  return user;
 };
 
 const App = () => {
-  const Profile = employeeProfilePayload.employee.manager
-    ? ManagerProfile
-    : EmployeeProfile;
+  const user = getUser(0);
+  localStorage.setItem("employees", JSON.stringify(employees));
 
+
+  let loggedInUserString = localStorage.getItem("loggedInUser");
+  let userData;
+
+  const userId = parseInt(
+    window.location.pathname.split("/")[
+      window.location.pathname.split("/").length - 1
+    ],
+    10
+  );
+  const noUserId = Object.is(NaN, userId);
+
+  if (noUserId) {
+    userData = loggedInUserString ? JSON.parse(loggedInUserString) : getUser(0);
+  } else {
+    userData = getUser(userId);
+  }
+
+  const Profile = user.isManager
+    ? () => ManagerProfile({ userData: userData })
+    : () => EmployeeProfile({ userData: userData });
   return (
     <Fragment>
-      <NavigationBar />
+      <NavigationBar gravatar={userData.gravatar} />
       <Switch>
-          <Route exact path="/" component={Fake}/>
-        <Route exact path="/account/:name" component={Profile} />
-        <Route exact path="/admin" component={AdminPage} />
-        <Route exact path="/initiatives" component={InitiativeListPage} />
-        <Route exact path="/initiatives/:initiative" component={InitiativePage} />
+        <Route path="/:id?" component={Profile} />
+        <Route path="/admin" component={AdminPage} />
+        <Route
+          exact
+          path="/initiatives"
+          component={() => InitiativeListPage(initiatives)}
+        />
+        <Route
+          exact
+          path="/initiatives/:initiative"
+          component={InitiativePage}
+        />
       </Switch>
     </Fragment>
   );

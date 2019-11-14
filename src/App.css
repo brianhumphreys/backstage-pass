@@ -1079,3 +1079,25 @@ END LINE-CHART by @kseso https://codepen.io/Kseso/pen/phiyL
   background: #e64c65;
   border-radius: 100%;
 }
+
+.initiative-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.initiative-image {
+  max-width: 300px !important;
+  max-height: 300px !important;
+}
+.initiative-title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: white;
+  font-size: 3rem;
+}
+.initiative-bio {
+  margin-top: 1rem;
+  color: white;
+  font-size: 16px;
+}

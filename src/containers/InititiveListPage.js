@@ -13,7 +13,7 @@ import employeeProfilePayload from "../mockData/employeeProfile";
 import InitiativeCards from "../components/InitiativeCards/InitiativeCards";
 import InitiativeBlock from "../components/InitiativeBlock";
 
-const InitiativePage = () => {
+const InitiativePage = (chadStuff) => {
   // console.log(employeeProfilePayload);
   const initiatives = employeeProfilePayload.initiatives;
 

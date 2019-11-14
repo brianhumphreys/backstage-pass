@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { signedInEmployee } from '../mockData/employees';
 
-const NavigationBar = () => {
+const NavigationBar = ({gravatar}) => {
   return (
     <header className="block">
       <ul className="header-menu horizontal-list">
@@ -51,7 +51,7 @@ const NavigationBar = () => {
           <img
             width="40px"
             alt="Anne Hathaway picture"
-            src="http://upload.wikimedia.org/wikipedia/commons/e/e1/Anne_Hathaway_Face.jpg"
+            src={gravatar}
           />
         </div>
       </div>

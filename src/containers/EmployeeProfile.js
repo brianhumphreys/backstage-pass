@@ -11,34 +11,23 @@ import MoreSocialBlock from '../components/MoreSocialBlock';
 import EmailBlock from '../components/EmailBlock';
 import LoadingBlock from '../components/LoadingBlock';
 import RadarChartBlock from '../components/RadarChartBlock/RadarChartBlock';
-import employees from "../mockData/employees";
 
-const EmployeeProfile = ({ account }) => {
-    const location = window.location.href.split('/');
-    const employeeIndex = employees.findIndex(employee => {
-        return employee.name.replace(/\s/g, '') === location[location.length-1];
-    });
-
-    const thisEmployee = employees[employeeIndex];
-
+const EmployeeProfile = ({userData}) => {
     return (
         <body>
         <div className="main-container">
-
-
             <div className="left-container container">
-                <MenuBlock/>
+                <MenuBlock />
                 <DonutChartBlock/>
                 <LoadingBlock/>
             </div>
             <div className="middle-container container">
-                <ProfileBlock account={thisEmployee}/>
+                <ProfileBlock userData={userData}/>
                 <GitHubBlock/>
                 <MediaBlock/>
             </div>
             <div className="right-container container">
-                <RadarChartBlock id="employeeskill" account={thisEmployee} comparing={false}/>
-                <LineChartBlock/>
+                <RadarChartBlock id="employeeSkills" account={userData} comparing={false}/>
                 <EmailBlock/>
             </div>
         </div>
